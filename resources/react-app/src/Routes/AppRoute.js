@@ -1,8 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home/Home";
-import RootLayout from "../layouts/RootLayout";
+import About from "../pages/AboutUs/About";
+import Corporate from "../pages/Corporate/Corporate";
 import Contact from "../pages/Contact/Contact";
-import Deneme from "../components/Deneme/MenuFirst";
+import RootLayout from "../layouts/RootLayout";
 
 function AppRoute() {
     return (
@@ -11,9 +12,10 @@ function AppRoute() {
                 {/* Örnek tanımlama.*/}
                 <Route path="" element={<RootLayout />}>
                     <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/corporate" element={<Corporate />} />
+                    <Route path="/contact" element={<Contact />} />
                 </Route>
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/deneme" element={<Deneme />} />
             </Route>
             <Route path="/register" element={<div>register</div>} />
             {/* Örnek tanımlama. 

@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*hero carousel'in next ve prev ok hover'ı */
+.custom-hover-color-herocarousel:hover {
+    color: #343280 !important;
+    transition: 0.9 all ease-in-out;
+}
+
+/*product carousel merkezleme işlemi */
+.product-carousel .slick-slide {
+    transform: scale(0.8);
+    transition: all 0.4s ease-in-out;
+}
+
+.product-carousel .slick-slide img {
+    max-width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+.product-carousel .slick-center {
+    transform: scale(1.1);
+}
+
+body {
+    font-family: Jost, sans-serif !important;
+}
