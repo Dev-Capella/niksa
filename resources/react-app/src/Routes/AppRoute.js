@@ -3,7 +3,7 @@ import Home from "../pages/Home/Home";
 import About from "../pages/AboutUs/About";
 import Corporate from "../pages/Corporate/Corporate";
 import Contact from "../pages/Contact/Contact";
-import RootLayout from "../layouts/RootLayout";
+import RootLayout from "../Layouts/RootLayout.jsx";
 
 function AppRoute() {
     return (
@@ -11,7 +11,7 @@ function AppRoute() {
             <Route>
                 {/* Örnek tanımlama.*/}
                 <Route path="" element={<RootLayout />}>
-                    <Route path="/" element={<Home />} />
+                    <Route index path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/corporate" element={<Corporate />} />
                     <Route path="/contact" element={<Contact />} />

@@ -8,13 +8,11 @@ import aboutus from "../../assets/kaynak1.jpg";
 
 const About = () => {
     return (
-        <div>
-            <Header />
+        <>
             <BreadcrumbsNav imageSrc={aboutus} text={"Hakkımızda"} />
             <AboutusComponent />
             <SloganBanner />
-            <Footer />
-        </div>
+        </>
     );
 };
 

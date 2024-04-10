@@ -9,15 +9,13 @@ import HomeContact from "../../components/HomeContact/HomeContact";
 
 function Home() {
     return (
-        <div>
-            <Header />
+        <>
             <HeroCarousel />
             <ProductCarousel />
             <SloganBanner />
             <HomeContact />
             <AboutCompany />
-            <Footer />
-        </div>
+        </>
     );
 }
 
