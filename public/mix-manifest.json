@@ -1,9 +1,5 @@
 {
-<<<<<<< Updated upstream
-    "/js/app.js": "/js/app.js?id=0c2d812c2e4da3fec8bd5bbfa36c46a9",
-=======
-    "/js/app.js": "/js/app.js?id=4f79b12545df3446bdd209279f50277d",
->>>>>>> Stashed changes
+    "/js/app.js": "/js/app.js?id=59c2fb471613e7315d976cb2e5da779f",
     "/css/app.css": "/css/app.css?id=68b329da9893e34099c7d8ad5cb9c940",
     "/favicon.ico": "/favicon.ico?id=b813881ffe7b1199eee34977e7a31bf9",
     "/fonts/vendor/slick-carousel/slick/slick.eot": "/fonts/vendor/slick-carousel/slick/slick.eot?id=4bb08b6ed048eaf8be2a371ffc8faec2",
@@ -27,6 +23,7 @@
     "/images/kaynak1.jpg": "/images/kaynak1.jpg?id=fb9dfded8d117bfbcc1dfe6257147774",
     "/images/logo.svg": "/images/logo.svg?id=d0e988ff6dbb3a24ce6751d53463f392",
     "/images/phone-call.png": "/images/phone-call.png?id=7fd69b15280b09e23994b03b7b30a62b",
+    "/images/prodcuts.png": "/images/prodcuts.png?id=96b11076d57770db9cf924ba52a28809",
     "/images/twitter.png": "/images/twitter.png?id=000b6a0a60290ba1708c0ceec69fb4c1",
     "/images/vendor/slick-carousel/slick/ajax-loader.gif": "/images/vendor/slick-carousel/slick/ajax-loader.gif?id=c5f04404df58fc3deb42d69f94476b6c",
     "/images/world.png": "/images/world.png?id=09bc7ad2c01ec4ae12a610a6d5d207b4",
@@ -39,12 +36,6 @@
     "/logo192.png": "/logo192.png?id=995306f3f1b50873ba0fe4c857a90d22",
     "/logo512.png": "/logo512.png?id=93c81d868a39562d52258e5b5b267644",
     "/manifest.json": "/manifest.json?id=d9d975cebe2ec20b6c652e1e4c12ccf0",
-<<<<<<< Updated upstream
-    "/mix-manifest.json": "/mix-manifest.json?id=3a75852b565e1e5c8d9e36883d0bf9d1",
+    "/mix-manifest.json": "/mix-manifest.json?id=4e294e08b3c87b101f80b80724a07941",
     "/robots.txt": "/robots.txt?id=fa1ded1ed7c11438a9b0385b1e112850"
-=======
-    "/mix-manifest.json": "/mix-manifest.json?id=54e10724c76164e714d0e474988e9067",
-    "/robots.txt": "/robots.txt?id=fa1ded1ed7c11438a9b0385b1e112850",
-    "/images/prodcuts.png": "/images/prodcuts.png?id=96b11076d57770db9cf924ba52a28809"
->>>>>>> Stashed changes
 }

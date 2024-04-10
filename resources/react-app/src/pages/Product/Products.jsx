@@ -64,11 +64,7 @@ function Products() {
                         products.map((item, i) => (
                             <div
                                 key={i}
-<<<<<<< Updated upstream
                                 className="w-1/4 h-96 max-sm:h-44 max-lg:w-2/4 p-4 flex flex-col justify-center items-center "
-=======
-                                className="w-1/4 h-96 max-lg:w-2/4 p-4 flex flex-col justify-center items-center "
->>>>>>> Stashed changes
                             >
                                 <img
                                     className="cursor-pointer bg-[#f3f3f3] w-full h-full "

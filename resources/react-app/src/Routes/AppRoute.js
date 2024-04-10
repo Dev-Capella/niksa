@@ -3,12 +3,8 @@ import Home from "../pages/Home/Home";
 import About from "../pages/AboutUs/About";
 import Corporate from "../pages/Corporate/Corporate";
 import Contact from "../pages/Contact/Contact";
-<<<<<<< Updated upstream
-import RootLayout from "../Layouts/RootLayout.jsx";
-=======
 import RootLayout from "../layouts/RootLayout";
 import Products from "../pages/Product/Products";
->>>>>>> Stashed changes
 
 function AppRoute() {
     return (
