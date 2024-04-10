@@ -3,7 +3,12 @@ import Home from "../pages/Home/Home";
 import About from "../pages/AboutUs/About";
 import Corporate from "../pages/Corporate/Corporate";
 import Contact from "../pages/Contact/Contact";
+<<<<<<< Updated upstream
 import RootLayout from "../Layouts/RootLayout.jsx";
+=======
+import RootLayout from "../layouts/RootLayout";
+import Products from "../pages/Product/Products";
+>>>>>>> Stashed changes
 
 function AppRoute() {
     return (
@@ -14,6 +19,7 @@ function AppRoute() {
                     <Route index path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/corporate" element={<Corporate />} />
+                    <Route path="/product" element={<Products />} />
                     <Route path="/contact" element={<Contact />} />
                 </Route>
             </Route>
