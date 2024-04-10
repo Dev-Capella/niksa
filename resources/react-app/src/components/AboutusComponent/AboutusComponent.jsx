@@ -12,7 +12,7 @@ const AboutusComponent = () => {
                         alt="About1"
                     ></img>
                 </div>
-                <div className="flex flex-col  justify-center items-center px-6 w-[39rem] h-52  border-2 shadow-2xl rounded">
+                <div className="flex flex-col  justify-center items-center px-6 w-[39rem] h-52  ">
                     <p className=" font-bold text-4xl text-[#343280] mb-6">
                         Biz Kimiz?
                     </p>
@@ -24,7 +24,7 @@ const AboutusComponent = () => {
                 </div>
             </div>
             <div className="flex flex-row justify-center items-center gap-24">
-                <div className="flex flex-col  justify-center items-center px-6 w-[39rem] h-52  border-2 shadow-2xl rounded">
+                <div className="flex flex-col  justify-center items-center px-6 w-[39rem] h-52  ">
                     <p className=" font-bold text-4xl text-[#343280] mb-6">
                         Vizyon & Misyon
                     </p>
@@ -44,7 +44,7 @@ const AboutusComponent = () => {
                 </div>
             </div>
             <div className="flex justify-center items-center mt-8 mb-24">
-                <div className="flex flex-col  justify-center items-center px-6 w-[80rem] h-52  border-2  shadow-2xl rounded">
+                <div className="flex flex-col  justify-center items-center px-6 w-[80rem] h-52  ">
                     <p className=" font-bold text-4xl text-[#343280] mb-6">
                         Kalite Anlayışımız
                     </p>

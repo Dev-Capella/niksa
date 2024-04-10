@@ -29,7 +29,7 @@ const Header = () => {
         >
             <div className="flex flex-row items-center justify-center h-24 w-full gap-24 fixed top-0 z-[9999] bg-transparent">
                 <img
-                    className="max-w-none max-h-28"
+                    className="max-w-none max-h-28 "
                     src={HeaderLogo}
                     alt="Header"
                 ></img>

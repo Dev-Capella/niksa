@@ -1,5 +1,5 @@
 {
-    "/js/app.js": "/js/app.js?id=6b57f75a0bc04bdc683008ba1bf6bf6b",
+    "/js/app.js": "/js/app.js?id=eea0ca12cd5553edf0bba301e486da38",
     "/css/app.css": "/css/app.css?id=68b329da9893e34099c7d8ad5cb9c940",
     "/favicon.ico": "/favicon.ico?id=b813881ffe7b1199eee34977e7a31bf9",
     "/fonts/vendor/slick-carousel/slick/slick.eot": "/fonts/vendor/slick-carousel/slick/slick.eot?id=4bb08b6ed048eaf8be2a371ffc8faec2",
@@ -19,14 +19,15 @@
     "/images/email.png": "/images/email.png?id=bad3318112a3631a6b48c281ecbfc53a",
     "/images/facebook.png": "/images/facebook.png?id=26ba70b815b797156889c4a01fb00861",
     "/images/headerlogo.png": "/images/headerlogo.png?id=4c204381539accfa013a36f4151b5fb7",
+    "/images/headerlogo3.png": "/images/headerlogo3.png?id=e30372dedc2d43e3b65032e62c988d53",
     "/images/kaynak1.jpg": "/images/kaynak1.jpg?id=fb9dfded8d117bfbcc1dfe6257147774",
-    "/images/logo.svg": "/images/logo.svg?id=06e733283fa43d1dd57738cfc409adbd",
+    "/images/logo.svg": "/images/logo.svg?id=d0e988ff6dbb3a24ce6751d53463f392",
     "/images/phone-call.png": "/images/phone-call.png?id=7fd69b15280b09e23994b03b7b30a62b",
     "/images/twitter.png": "/images/twitter.png?id=000b6a0a60290ba1708c0ceec69fb4c1",
     "/images/vendor/slick-carousel/slick/ajax-loader.gif": "/images/vendor/slick-carousel/slick/ajax-loader.gif?id=c5f04404df58fc3deb42d69f94476b6c",
     "/images/world.png": "/images/world.png?id=09bc7ad2c01ec4ae12a610a6d5d207b4",
     "/images/youtube.png": "/images/youtube.png?id=0cd2f341434cbe6309aaa25f8438698d",
-    "/index.html": "/index.html?id=32d684c8839babaa50a9cfdc73d7e57d",
+    "/index.html": "/index.html?id=020d1e123e3521fb731c1a5b3e5c1218",
     "/index.php": "/index.php?id=3b58bff18126a61c142cc576457c82a6",
     "/js/app.js.LICENSE.txt": "/js/app.js.LICENSE.txt?id=97ac82e49cc518e0aa946868869a9f52",
     "/js/chunks/131.js": "/js/chunks/131.js?id=c1d863a4de89598d51bbca4da0ed382f",
@@ -34,6 +35,6 @@
     "/logo192.png": "/logo192.png?id=995306f3f1b50873ba0fe4c857a90d22",
     "/logo512.png": "/logo512.png?id=93c81d868a39562d52258e5b5b267644",
     "/manifest.json": "/manifest.json?id=d9d975cebe2ec20b6c652e1e4c12ccf0",
-    "/mix-manifest.json": "/mix-manifest.json?id=360857dc089e4e30ea68550129377601",
+    "/mix-manifest.json": "/mix-manifest.json?id=b956645e581d72ecd5a47aeb5b1703b8",
     "/robots.txt": "/robots.txt?id=fa1ded1ed7c11438a9b0385b1e112850"
 }
