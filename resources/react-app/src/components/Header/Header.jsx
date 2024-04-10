@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import HeaderLogo from "../../assets/headerlogo.png";
+import HeaderLogo from "../../assets/HeaderLogo/headerlogo.png";
 import { GrLanguage } from "react-icons/gr";
 
 const Header = () => {

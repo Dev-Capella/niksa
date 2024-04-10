@@ -2,7 +2,7 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import demir from "../../assets/demir.jpg";
+import demir from "../../assets/ProductSlider/demir.jpg";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 function SampleNextArrow(props) {

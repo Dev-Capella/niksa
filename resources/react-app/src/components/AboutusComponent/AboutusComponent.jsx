@@ -1,6 +1,6 @@
 import React from "react";
-import aboutuslogo from "../../assets/aboutuslogo.png";
-import aboustus1 from "../../assets/about1.jpg";
+import aboutuslogo from "../../assets/AboutUs/aboutuslogo.png";
+import aboustus1 from "../../assets/AboutUs/about1.jpg";
 const AboutusComponent = () => {
     return (
         <div className="flex flex-col">

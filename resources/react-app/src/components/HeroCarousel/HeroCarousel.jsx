@@ -2,9 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import carousel1 from "../../assets/carousel1.png";
-import carousel2 from "../../assets/carousel2.jpg";
-import carousel3 from "../../assets/carousel3.jpg";
+import carousel1 from "../../assets/HomeSlider/carousel1.png";
+import carousel2 from "../../assets/HomeSlider/carousel2.jpg";
+import carousel3 from "../../assets/HomeSlider/carousel3.jpg";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 function SampleNextArrow(props) {
