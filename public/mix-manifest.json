@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "/js/app.js": "/js/app.js?id=4e8bb4119fdf6ec7e402cf4a7757c3ca",
+=======
+    "/js/app.js": "/js/app.js?id=3956e07402430db48de72f8cd95e3621",
+>>>>>>> main
     "/css/app.css": "/css/app.css?id=68b329da9893e34099c7d8ad5cb9c940",
     "/favicon.ico": "/favicon.ico?id=b813881ffe7b1199eee34977e7a31bf9",
     "/fonts/vendor/slick-carousel/slick/slick.eot": "/fonts/vendor/slick-carousel/slick/slick.eot?id=4bb08b6ed048eaf8be2a371ffc8faec2",
@@ -36,10 +40,15 @@
     "/logo192.png": "/logo192.png?id=995306f3f1b50873ba0fe4c857a90d22",
     "/logo512.png": "/logo512.png?id=93c81d868a39562d52258e5b5b267644",
     "/manifest.json": "/manifest.json?id=d9d975cebe2ec20b6c652e1e4c12ccf0",
+<<<<<<< HEAD
     "/mix-manifest.json": "/mix-manifest.json?id=ca3cca798b6fd68fb029c6cf7205f9e5",
     "/robots.txt": "/robots.txt?id=fa1ded1ed7c11438a9b0385b1e112850",
     "/images/niksaaboutimage.jpg": "/images/niksaaboutimage.jpg?id=4704cf056da078fc6cfc1002a9ed1050",
     "/images/misyon.png": "/images/misyon.png?id=02864c73090abd39c6e3ec34e534ff5f",
     "/images/vizyon.png": "/images/vizyon.png?id=65f715240ffaf879ee9891328722a067",
     "/images/kalite.png": "/images/kalite.png?id=ebb973a3e5f6355b2cefda59ca91cc91"
+=======
+    "/mix-manifest.json": "/mix-manifest.json?id=133562b764d54f81f4ed0fc125b11790",
+    "/robots.txt": "/robots.txt?id=fa1ded1ed7c11438a9b0385b1e112850"
+>>>>>>> main
 }

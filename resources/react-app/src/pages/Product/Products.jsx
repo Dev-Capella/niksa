@@ -1,7 +1,5 @@
 import React, { useLayoutEffect, useState } from "react";
 import BreadcrumbsNav from "../../components/BreadcrumbsNav/BreadcrumbsNav";
-import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header/Header";
 import prodcutBanner from "../../assets/product/prodcuts.png";
 import generalService from "../../services/generalService";
 function Products() {
@@ -49,7 +47,6 @@ function Products() {
     }
     return (
         <div>
-            <Header />
             <BreadcrumbsNav imageSrc={prodcutBanner} text={"Ürünler"} />
             <div className="container mx-auto my-10">
                 <div className="p-4">
@@ -147,7 +144,6 @@ function Products() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 }
