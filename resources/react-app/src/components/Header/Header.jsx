@@ -24,11 +24,11 @@ const Header = () => {
         <nav
             className={
                 navbar
-                    ? "  flex flex-row items-center justify-between h-24 w-full fixed top-0 z-[9999] bg-[#343280] transition-all duration-500"
+                    ? "  flex flex-row items-center justify-around h-24 w-full fixed top-0 z-[9999] bg-[#343280] transition-all duration-500"
                     : "bg-transparent transition-all duration-500"
             }
         >
-            <div className="  flex flex-row items-center justify-between h-24 w-full  fixed top-0 z-[9999] bg-transparent">
+            <div className="  flex flex-row items-center justify-around h-24 w-full  fixed top-0 z-[9999] bg-transparent">
                 <img
                     className="max-w-none max-h-28 "
                     src={HeaderLogo}

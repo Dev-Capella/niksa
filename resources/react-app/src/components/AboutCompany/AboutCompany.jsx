@@ -7,7 +7,7 @@ import { GiFlyingFlag } from "react-icons/gi";
 
 const AboutCompany = () => {
     return (
-        <div className="mt-5 mb-24 w-full h-auto relative flex justify-center items-center bg-[#f8f8f8]">
+        <div className="mt-24 mb-24 w-full h-auto relative flex justify-center items-center bg-[#f8f8f8]">
             <div className="z-50 flex flex-wrap justify-center items-center px-4 py-28 gap-10 max-2xl:px-12 max-xl:px-2 max-xl:py-24  max-md:py-4  max-md:gap-10 max-xl:grid-cols-3 max-sm:grid-cols-1 max-sm:py-12">
                 <div className="flex justify-start items-center flex-col w-64 h-80">
                     <div className="flex justify-center items-center flex-col">
