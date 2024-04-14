@@ -13,13 +13,11 @@ function AppRoute() {
                 {/* Örnek tanımlama.*/}
                 <Route path="" element={<RootLayout />}>
                     <Route index path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/corporate" element={<Corporate />} />
-                    <Route path="/product" element={<Products />} />
-                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/hakkimizda" element={<About />} />
+                    <Route path="/urunler" element={<Products />} />
+                    <Route path="/iletisim" element={<Contact />} />
                 </Route>
             </Route>
-            <Route path="/register" element={<div>register</div>} />
             {/* Örnek tanımlama. 
       <Route path="/register" element={<Register />} /> */}
         </Routes>
