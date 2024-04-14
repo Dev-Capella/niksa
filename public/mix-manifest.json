@@ -1,5 +1,5 @@
 {
-    "/js/app.js": "/js/app.js",
+    "/js/app.js": "/js/app.js?id=4e8bb4119fdf6ec7e402cf4a7757c3ca",
     "/css/app.css": "/css/app.css?id=68b329da9893e34099c7d8ad5cb9c940",
     "/favicon.ico": "/favicon.ico?id=b813881ffe7b1199eee34977e7a31bf9",
     "/fonts/vendor/slick-carousel/slick/slick.eot": "/fonts/vendor/slick-carousel/slick/slick.eot?id=4bb08b6ed048eaf8be2a371ffc8faec2",
@@ -23,6 +23,7 @@
     "/images/kaynak1.jpg": "/images/kaynak1.jpg?id=fb9dfded8d117bfbcc1dfe6257147774",
     "/images/logo.svg": "/images/logo.svg?id=d0e988ff6dbb3a24ce6751d53463f392",
     "/images/phone-call.png": "/images/phone-call.png?id=7fd69b15280b09e23994b03b7b30a62b",
+    "/images/prodcuts.png": "/images/prodcuts.png?id=96b11076d57770db9cf924ba52a28809",
     "/images/twitter.png": "/images/twitter.png?id=000b6a0a60290ba1708c0ceec69fb4c1",
     "/images/vendor/slick-carousel/slick/ajax-loader.gif": "/images/vendor/slick-carousel/slick/ajax-loader.gif?id=c5f04404df58fc3deb42d69f94476b6c",
     "/images/world.png": "/images/world.png?id=09bc7ad2c01ec4ae12a610a6d5d207b4",
@@ -35,6 +36,10 @@
     "/logo192.png": "/logo192.png?id=995306f3f1b50873ba0fe4c857a90d22",
     "/logo512.png": "/logo512.png?id=93c81d868a39562d52258e5b5b267644",
     "/manifest.json": "/manifest.json?id=d9d975cebe2ec20b6c652e1e4c12ccf0",
-    "/mix-manifest.json": "/mix-manifest.json?id=d7c2a843afdac94250078ad0bff5bb61",
-    "/robots.txt": "/robots.txt?id=fa1ded1ed7c11438a9b0385b1e112850"
+    "/mix-manifest.json": "/mix-manifest.json?id=ca3cca798b6fd68fb029c6cf7205f9e5",
+    "/robots.txt": "/robots.txt?id=fa1ded1ed7c11438a9b0385b1e112850",
+    "/images/niksaaboutimage.jpg": "/images/niksaaboutimage.jpg?id=4704cf056da078fc6cfc1002a9ed1050",
+    "/images/misyon.png": "/images/misyon.png?id=02864c73090abd39c6e3ec34e534ff5f",
+    "/images/vizyon.png": "/images/vizyon.png?id=65f715240ffaf879ee9891328722a067",
+    "/images/kalite.png": "/images/kalite.png?id=ebb973a3e5f6355b2cefda59ca91cc91"
 }
