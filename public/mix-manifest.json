@@ -1,5 +1,5 @@
 {
-    "/js/app.js": "/js/app.js?id=0f434ba5c2fc60e240cd8a2fde1fa56e",
+    "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css?id=68b329da9893e34099c7d8ad5cb9c940",
     "/favicon.ico": "/favicon.ico?id=b813881ffe7b1199eee34977e7a31bf9",
     "/fonts/vendor/slick-carousel/slick/slick.eot": "/fonts/vendor/slick-carousel/slick/slick.eot?id=4bb08b6ed048eaf8be2a371ffc8faec2",
@@ -40,7 +40,7 @@
     "/logo192.png": "/logo192.png?id=995306f3f1b50873ba0fe4c857a90d22",
     "/logo512.png": "/logo512.png?id=93c81d868a39562d52258e5b5b267644",
     "/manifest.json": "/manifest.json?id=d9d975cebe2ec20b6c652e1e4c12ccf0",
-    "/mix-manifest.json": "/mix-manifest.json?id=3760afab93ef0c6abf88656826a74943",
+    "/mix-manifest.json": "/mix-manifest.json?id=9abbc3f85e8bb63ef5949b7df0ea546f",
     "/robots.txt": "/robots.txt?id=fa1ded1ed7c11438a9b0385b1e112850",
     "/storage/home-sliders/April2024/bzdB4c8G1dg9x0nfbovA.png": "/storage/home-sliders/April2024/bzdB4c8G1dg9x0nfbovA.png?id=b5878986b9c19ab088a85958b7c8d0f5",
     "/storage/home-sliders/April2024/ubdtGW32L05D6DnH9NGe.png": "/storage/home-sliders/April2024/ubdtGW32L05D6DnH9NGe.png?id=4c33b2fa86f94d1ed4c09c17957fbc8e",
@@ -105,5 +105,8 @@
     "/storage/products/April2024/yOpz8pG9nG637isH9nPt.png": "/storage/products/April2024/yOpz8pG9nG637isH9nPt.png?id=5634e739e39aeb409afb1e335117b872",
     "/storage/products/April2024/zL1QDf6z1H4KbtpoiKa1.png": "/storage/products/April2024/zL1QDf6z1H4KbtpoiKa1.png?id=041f9e43265b208b61f15ff49cd1557b",
     "/images/banner.jpg": "/images/banner.jpg?id=fd34fc9745792e8cbb45db1c5cb7565b",
-    "/images/banner2.jpg": "/images/banner2.jpg?id=4b5a2ac250321f9a03ec701954967058"
+    "/images/banner2.jpg": "/images/banner2.jpg?id=4b5a2ac250321f9a03ec701954967058",
+    "/images/icon.ico": "/images/icon.ico?id=144f5cd0804f190b47030eef898bc32b",
+    "/images/whitelogo.png": "/images/whitelogo.png?id=c023b775c37274e11ce86e338e532d14",
+    "/storage.zip": "/storage.zip?id=44fa94fd8df429aae53e493c00be3482"
 }
