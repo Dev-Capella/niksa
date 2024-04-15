@@ -1,7 +1,7 @@
 import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import HeaderLogo from "../../assets/HeaderLogo/headerlogo.png";
 import whitelogo from "../../assets/HeaderLogo/whitelogo.png";
@@ -35,12 +35,13 @@ const Header = () => {
     ];
     const isMobile = window.innerWidth <= 768;
 
+    useEffect(() => {}, [slug]);
     return (
         <Disclosure
             as="nav"
             className={`absolute top-0 z-50 w-full max-sm:relative max-md:bg-white ${
                 !isMobile && navbar
-                    ? "sticky top-0 bg-white shadow-md z-[99999] transition-all duration-500 ease-in-out"
+                    ? "sticky top-0 bg-white shadow-md z-[99999] transition-all duration-500"
                     : ""
             }`}
             style={{ top: !isMobile && navbar ? "0" : "" }}
@@ -51,7 +52,7 @@ const Header = () => {
                         <div
                             className={
                                 navbar
-                                    ? "relative flex sm:h-auto h-auto items-center justify-between"
+                                    ? "relative flex sm:h-auto h-auto items-center justify-between transition-all duration-500 "
                                     : "relative flex sm:h-20 h-16 items-center justify-between"
                             }
                         >
@@ -72,10 +73,10 @@ const Header = () => {
                                     className="block lg:hidden h-12"
                                     src={HeaderLogo}
                                     onClick={() => navigate("/")}
-                                    alt="Özayaz boru"
+                                    alt="Niksa Metal"
                                 />
                             </div>
-                            <div className="flex items-center justify-center sm:items-stretch sm:justify-around text-[#191919] font-semibold w-full">
+                            <div className="flex items-center justify-center sm:items-stretch sm:justify-around text-[#191919] font-semibold w-full ">
                                 <div className="hidden sm:ml-6 md:block w-[85%] max-xl:w-full">
                                     <div
                                         className={`flex justify-between items-center max-xl:text-sm max-lg:px-10 ${

@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useState } from "react";
 import BreadcrumbsNav from "../../components/BreadcrumbsNav/BreadcrumbsNav";
 import prodcutBanner from "../../assets/product/prodcuts.png";
 import generalService from "../../services/generalService";
+import { useParams } from "react-router-dom";
 function Products() {
     const [products, setProducts] = useState(null);
     const [pagination, setPagination] = useState(1);
