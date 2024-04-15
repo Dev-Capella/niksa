@@ -3,7 +3,7 @@ import HeroCarousel from "../../components/HeroCarousel/HeroCarousel";
 import ProductCarousel from "../../components/ProductCarousel/ProductCarousel";
 import AboutCompany from "../../components/AboutCompany/AboutCompany";
 import SloganBanner from "../../components/SloganBanner/SloganBanner";
-import HomeContact from "../../components/HomeContact/HomeContact";
+import ContactForm from "../../components/Contact/contactForm.jsx";
 
 function Home() {
     return (
@@ -11,7 +11,7 @@ function Home() {
             <HeroCarousel />
             <ProductCarousel />
             <SloganBanner />
-            <HomeContact />
+            <ContactForm />
             <AboutCompany />
         </>
     );
