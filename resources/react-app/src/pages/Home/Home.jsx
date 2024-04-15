@@ -10,6 +10,7 @@ function Home() {
         <>
             <HeroCarousel />
             <ProductCarousel />
+            <SloganBanner />
             <ContactForm />
             <AboutCompany />
         </>
