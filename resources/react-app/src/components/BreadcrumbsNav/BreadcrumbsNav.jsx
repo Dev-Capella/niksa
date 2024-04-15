@@ -8,7 +8,7 @@ const BreadcrumbsNav = ({ imageSrc, text }) => {
                 src={imageSrc}
                 alt={text}
             ></img>
-            <div className="absolute inset-0 bg-black opacity-40 "></div>
+            <div className="absolute inset-0 bg-black opacity-30 "></div>
             <h2 className="text-white font-bold text-7xl absolute inset-0 flex items-center justify-center">
                 {text}
             </h2>

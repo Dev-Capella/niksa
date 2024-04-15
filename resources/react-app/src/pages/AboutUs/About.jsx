@@ -1,22 +1,19 @@
 import React from "react";
 import BreadcrumbsNav from "../../components/BreadcrumbsNav/BreadcrumbsNav";
-import aboutus from "../../assets/kaynak1.jpg";
+import BizKimiz from "../../assets/AboutUs/weare.png";
 import misyon from "../../assets/AboutUs/misyon.png";
 import vizyon from "../../assets/AboutUs/vizyon.png";
 import kalite from "../../assets/AboutUs/kalite.png";
+import AboutusBanner from "../../assets/AboutUs/aboutban1.jpg";
 
 const About = () => {
     return (
         <>
-            <BreadcrumbsNav imageSrc={aboutus} text={"Hakkımızda"} />
+            <BreadcrumbsNav imageSrc={AboutusBanner} text={"Hakkımızda"} />
             <div className="w-full h-full py-10">
-                <div className="flex justify-center items-center pb-5">
-                    <h1 className="text-5xl font-bold text-gray-700">
-                        Niksa Metal
-                    </h1>
-                </div>
+                
                 <div className="flex w-full bgs-[#343280] bg-[#f6f6f6] h-auto py-10 justify-center items-center flex-col">
-                    <h1 className="text-3xl font-medium">Biz Kimiz ?</h1>
+                    <h1 className="text-3xl font-medium"><img src={BizKimiz} alt="Niksa Metal" /></h1>
                     <p className="p-10 text-black text-center">
                         <b>Niksa Metal</b>, Bursa merkezli operasyonu ve 30 yılı
                         aşkın tecrübesiyle; kaynaklı imalat, yüzey işlem ve

@@ -21,11 +21,15 @@ const getHomeProductSlider = async (slug) => {
     const result = await axiosInstance.get(`get-prodcut-slider`);
     return result.data;
 };
-
+const contactPost = async (data) => {
+    const result = await axiosInstance.post(`contact`,data);
+    return result.data;
+};
 const exportFunction = {
     getProducts,
     getHomeProductSlider,
     getPage,
+    contactPost,
     getHomeSlider,
 };
 

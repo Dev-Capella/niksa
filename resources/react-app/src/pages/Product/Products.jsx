@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useState } from "react";
 import BreadcrumbsNav from "../../components/BreadcrumbsNav/BreadcrumbsNav";
-import prodcutBanner from "../../assets/product/prodcuts.png";
+import prodcutBanner from "../../assets/product/productbanner.jpg";
 import generalService from "../../services/generalService";
 function Products() {
     const [products, setProducts] = useState(null);
