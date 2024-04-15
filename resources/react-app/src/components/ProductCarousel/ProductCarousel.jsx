@@ -4,12 +4,15 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import demir from "../../assets/ProductSlider/demir.jpg";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import { useState, useEffect } from "react";
+import generalService from "../../services/generalService";
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
+
     return (
         <MdKeyboardArrowRight
-            className="slick-arrow slick-next -right-6 max-md:-right-2 max-lg:right-2 h-56 w-56 z-50"
+            className="slick-arrow slick-next -right-28 max-md:-right-2 max-sm:w-12 max-sm:right-2 max-lg:right-2 max-xl:w-20 max-xl:h-24 max-xl:right-4 h-56 w-40 z-40"
             style={{
                 ...style,
                 display: "block",
@@ -24,7 +27,7 @@ function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
         <MdKeyboardArrowLeft
-            className="slick-arrow slick-next -left-6 max-md:-left-1 max-lg:left-2 h-56 w-56 z-50"
+            className="slick-arrow slick-next -left-28 max-md:-left-1 max-sm:w-12 max-sm:left-2 max-lg:-left-4  max-xl:w-20 max-xl:h-24 max-xl:left-4 h-56 w-40 z-40"
             style={{
                 ...style,
                 display: "block",
@@ -36,6 +39,15 @@ function SamplePrevArrow(props) {
 }
 
 const ProductCarousel = () => {
+    const [products, setProducts] = useState(null);
+    useEffect(() => {
+        const fetchData = async () => {
+            const data = await generalService.getHomeProductSlider();
+            console.log(data);
+            setProducts(data);
+        };
+        fetchData();
+    }, []);
     const settings = {
         dots: true,
         infinite: true,
@@ -57,30 +69,24 @@ const ProductCarousel = () => {
                 </p>
             </div>
             <Slider className=" flex" {...settings}>
-                <div className="flex justify-center items-center ">
-                    <img className="w-80 h-80" src={demir} alt="demir" />
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-                        <p className="text-2xl font-bold ">Demir</p>
-                    </div>
-                </div>
-                <div className="flex justify-center items-center ">
-                    <img className="w-80 h-80" src={demir} alt="demir" />
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-                        <p className="text-2xl font-bold">Çelik</p>
-                    </div>
-                </div>
-                <div className="flex justify-center items-center ">
-                    <img className="w-80 h-80" src={demir} alt="demir" />
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-                        <p className="text-2xl font-bold">Bronz</p>
-                    </div>
-                </div>
-                <div className="flex justify-center items-center ">
-                    <img className="w-80 h-80" src={demir} alt="demir" />
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-                        <p className="text-2xl font-bold">Tahta</p>
-                    </div>
-                </div>
+                {products &&
+                    products.map((item, i) => (
+                        <div
+                            key={i}
+                            className="flex justify-center items-center "
+                        >
+                            <img
+                                className="w-10/12 h-10/12"
+                                src={item.image}
+                                alt={item.image_alt}
+                            />
+                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+                                <p className="text-xl font-bold max-sm:text-xs text-center text-black bg-gray-100 ">
+                                    {item.name}
+                                </p>
+                            </div>
+                        </div>
+                    ))}
             </Slider>
         </div>
     );

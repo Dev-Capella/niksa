@@ -13,6 +13,14 @@ const SloganBanner = () => {
             <h2 className="text-white font-bold text-5xl absolute inset-0 flex items-center justify-center">
                 <p>Niksa Metal Makine Mobilya</p>
             </h2>
+            <h2 className="text-white font-bold text-7xl absolute inset-0 flex items-center justify-center">
+                <div className="flex flex-col">
+                    <p className="font-bold text-center">Niksa</p>
+                    <p className="text-xs font-normal">
+                        Metal Mak. Mob. Otomotiv İnşaat San ve Tic. Ltd Şti.
+                    </p>
+                </div>
+            </h2>
         </div>
     );
 };

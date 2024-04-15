@@ -11,7 +11,7 @@ function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
         <MdKeyboardArrowRight
-            className="slick-arrow slick-next right-4 max-md:-right-2 max-lg:right-2 h-56 w-56 z-50 transition-all duration-900 ease-in-out
+            className="slick-arrow slick-next right-4 max-md:right-6 max-md:h-24 max-md:w-24 max-lg:right-2 max-lg:w-28 max-lg:h-28 max-sm:right-2  max-sm:h-16 max-sm:w-16 h-56 w-56 z-50 transition-all duration-900 ease-in-out
             custom-hover-color-herocarousel"
             style={{
                 ...style,
@@ -27,7 +27,7 @@ function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
         <MdKeyboardArrowLeft
-            className="slick-arrow slick-next left-4 max-md:-left-2 max-lg:left-2 h-56 w-56 z-50 transition-all duration-900 ease-in-out
+            className="slick-arrow slick-next left-4 max-md:left-6 max-md:h-24 max-md:w-24 max-lg:left-2 max-lg:w-28 max-lg:h-28 max-sm:left-2 max-sm:h-16 max-sm:w-16 h-56 w-56 z-50 transition-all duration-900 ease-in-out
             custom-hover-color-herocarousel"
             style={{
                 ...style,
