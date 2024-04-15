@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-    "/js/app.js": "/js/app.js",
-=======
-    "/js/app.js": "/js/app.js?id=64019fe7474627300f9fbb91eb2ad53a",
->>>>>>> a14d4b70b18875f0650505bce212b028d8eb7ed3
+    "/js/app.js": "/js/app.js?id=74ed23a474d3c8b5eb72f7100d88c70f",
     "/css/app.css": "/css/app.css?id=68b329da9893e34099c7d8ad5cb9c940",
     "/favicon.ico": "/favicon.ico?id=b813881ffe7b1199eee34977e7a31bf9",
     "/fonts/vendor/slick-carousel/slick/slick.eot": "/fonts/vendor/slick-carousel/slick/slick.eot?id=4bb08b6ed048eaf8be2a371ffc8faec2",
@@ -13,6 +9,8 @@
     "/images/about1.jpg": "/images/about1.jpg?id=272320c59d641a681e73c8d0f658e82c",
     "/images/aboutus.png": "/images/aboutus.png?id=275b04efe4990ba8de9208fd04c96834",
     "/images/aboutuslogo.png": "/images/aboutuslogo.png?id=00aa545b4bc57a5ada7049d0f098d424",
+    "/images/banner.jpg": "/images/banner.jpg?id=fd34fc9745792e8cbb45db1c5cb7565b",
+    "/images/banner2.jpg": "/images/banner2.jpg?id=4b5a2ac250321f9a03ec701954967058",
     "/images/carousel1.jpg": "/images/carousel1.jpg?id=6226aa38195fd46393b4c4f9299af7f3",
     "/images/carousel1.png": "/images/carousel1.png?id=68a300a3b4c8500a950733003d7e6844",
     "/images/carousel2.jpg": "/images/carousel2.jpg?id=aca0c0548a7f0a98c7ff0c2da745a0c7",
@@ -24,6 +22,7 @@
     "/images/facebook.png": "/images/facebook.png?id=26ba70b815b797156889c4a01fb00861",
     "/images/headerlogo.png": "/images/headerlogo.png?id=4c204381539accfa013a36f4151b5fb7",
     "/images/headerlogo3.png": "/images/headerlogo3.png?id=e30372dedc2d43e3b65032e62c988d53",
+    "/images/icon.ico": "/images/icon.ico?id=144f5cd0804f190b47030eef898bc32b",
     "/images/kalite.png": "/images/kalite.png?id=ebb973a3e5f6355b2cefda59ca91cc91",
     "/images/kaynak1.jpg": "/images/kaynak1.jpg?id=fb9dfded8d117bfbcc1dfe6257147774",
     "/images/logo.svg": "/images/logo.svg?id=d0e988ff6dbb3a24ce6751d53463f392",
@@ -34,6 +33,7 @@
     "/images/twitter.png": "/images/twitter.png?id=000b6a0a60290ba1708c0ceec69fb4c1",
     "/images/vendor/slick-carousel/slick/ajax-loader.gif": "/images/vendor/slick-carousel/slick/ajax-loader.gif?id=c5f04404df58fc3deb42d69f94476b6c",
     "/images/vizyon.png": "/images/vizyon.png?id=65f715240ffaf879ee9891328722a067",
+    "/images/whitelogo.png": "/images/whitelogo.png?id=c023b775c37274e11ce86e338e532d14",
     "/images/world.png": "/images/world.png?id=09bc7ad2c01ec4ae12a610a6d5d207b4",
     "/images/youtube.png": "/images/youtube.png?id=0cd2f341434cbe6309aaa25f8438698d",
     "/index.html": "/index.html?id=020d1e123e3521fb731c1a5b3e5c1218",
@@ -44,7 +44,7 @@
     "/logo192.png": "/logo192.png?id=995306f3f1b50873ba0fe4c857a90d22",
     "/logo512.png": "/logo512.png?id=93c81d868a39562d52258e5b5b267644",
     "/manifest.json": "/manifest.json?id=d9d975cebe2ec20b6c652e1e4c12ccf0",
-    "/mix-manifest.json": "/mix-manifest.json?id=9abbc3f85e8bb63ef5949b7df0ea546f",
+    "/mix-manifest.json": "/mix-manifest.json?id=55290e4f698249274900f0f2fd7e44eb",
     "/robots.txt": "/robots.txt?id=fa1ded1ed7c11438a9b0385b1e112850",
     "/storage/home-sliders/April2024/bzdB4c8G1dg9x0nfbovA.png": "/storage/home-sliders/April2024/bzdB4c8G1dg9x0nfbovA.png?id=b5878986b9c19ab088a85958b7c8d0f5",
     "/storage/home-sliders/April2024/ubdtGW32L05D6DnH9NGe.png": "/storage/home-sliders/April2024/ubdtGW32L05D6DnH9NGe.png?id=4c33b2fa86f94d1ed4c09c17957fbc8e",
@@ -108,9 +108,5 @@
     "/storage/products/April2024/YBiFfciRuXn5jp6zoqV5.png": "/storage/products/April2024/YBiFfciRuXn5jp6zoqV5.png?id=df9dc3760fc2edab511b35d41b9cf088",
     "/storage/products/April2024/yOpz8pG9nG637isH9nPt.png": "/storage/products/April2024/yOpz8pG9nG637isH9nPt.png?id=5634e739e39aeb409afb1e335117b872",
     "/storage/products/April2024/zL1QDf6z1H4KbtpoiKa1.png": "/storage/products/April2024/zL1QDf6z1H4KbtpoiKa1.png?id=041f9e43265b208b61f15ff49cd1557b",
-    "/images/banner.jpg": "/images/banner.jpg?id=fd34fc9745792e8cbb45db1c5cb7565b",
-    "/images/banner2.jpg": "/images/banner2.jpg?id=4b5a2ac250321f9a03ec701954967058",
-    "/images/icon.ico": "/images/icon.ico?id=144f5cd0804f190b47030eef898bc32b",
-    "/images/whitelogo.png": "/images/whitelogo.png?id=c023b775c37274e11ce86e338e532d14",
     "/storage.zip": "/storage.zip?id=44fa94fd8df429aae53e493c00be3482"
 }
