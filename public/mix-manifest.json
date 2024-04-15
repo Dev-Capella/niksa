@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "/js/app.js": "/js/app.js",
+=======
+    "/js/app.js": "/js/app.js?id=64019fe7474627300f9fbb91eb2ad53a",
+>>>>>>> a14d4b70b18875f0650505bce212b028d8eb7ed3
     "/css/app.css": "/css/app.css?id=68b329da9893e34099c7d8ad5cb9c940",
     "/favicon.ico": "/favicon.ico?id=b813881ffe7b1199eee34977e7a31bf9",
     "/fonts/vendor/slick-carousel/slick/slick.eot": "/fonts/vendor/slick-carousel/slick/slick.eot?id=4bb08b6ed048eaf8be2a371ffc8faec2",

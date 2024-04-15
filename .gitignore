@@ -13,8 +13,6 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
-<<<<<<< HEAD
 public/js/app.js
-=======
-/public/js/app.js
->>>>>>> main
+public/mix-manifest.json
+app.js
