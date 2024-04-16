@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,6 +6,7 @@ import carousel1 from "../../assets/HomeSlider/carousel1.png";
 import carousel2 from "../../assets/HomeSlider/carousel2.jpg";
 import carousel3 from "../../assets/HomeSlider/carousel3.jpg";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import generalService from "../../services/generalService";
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -40,6 +41,16 @@ function SamplePrevArrow(props) {
 }
 
 const HeroCarousel = () => {
+    const [products, setProducts] = useState(null);
+    useEffect(() => {
+        const fetchData = async () => {
+            const data = await generalService.getHomeSlider();
+            console.log(data);
+            setProducts(data);
+        };
+        fetchData();
+    }, []);
+
     const settings = {
         dots: true,
         fade: true,
@@ -57,42 +68,30 @@ const HeroCarousel = () => {
     return (
         <div className="slider-container w-full h-screen overflow-hidden relative">
             <Slider {...settings}>
-                <div className="text-center w-full h-screen relative ">
-                    <img
-                        className="w-screen h-full object-cover"
-                        src={carousel1}
-                        alt="Carousel 1"
-                    />
-                    <div className="absolute inset-0 bg-black opacity-50"></div>
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">
-                        <h4 className="text-xl font-bold">Lorem İpsum1</h4>
-                        <h1 className="text-4xl font-bold">Lorem İpsum1</h1>
-                    </div>
-                </div>
-                <div className="text-center w-full h-screen relative">
-                    <img
-                        className="w-screen h-full object-cover"
-                        src={carousel2}
-                        alt="Carousel 2"
-                    />
-                    <div className="absolute inset-0 bg-black opacity-50"></div>
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">
-                        <h4 className="text-xl font-bold">Lorem İpsum2</h4>
-                        <h1 className="text-4xl font-bold">Lorem İpsum2</h1>
-                    </div>
-                </div>
-                <div className="text-center w-full h-screen relative ">
-                    <img
-                        className="w-screen h-full object-cover"
-                        src={carousel3}
-                        alt="Carousel 3"
-                    />
-                    <div className="absolute inset-0 bg-black opacity-50"></div>
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">
-                        <h4 className="text-xl font-bold">Lorem İpsum3</h4>
-                        <h1 className="text-4xl font-bold">Lorem İpsum3</h1>
-                    </div>
-                </div>
+                {products &&
+                    products.map((item, i) => {
+                        return (
+                            <div
+                                key={i}
+                                className="text-center w-full h-screen relative "
+                            >
+                                <img
+                                    className="w-screen h-full object-cover"
+                                    src={item.image}
+                                    alt="HomeSlider"
+                                />
+                                <div className="absolute inset-0 bg-black opacity-50"></div>
+                                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">
+                                    <h4 className="text-xl font-bold">
+                                        {item.title}
+                                    </h4>
+                                    <h1 className="text-4xl font-bold">
+                                        {item.title}
+                                    </h1>
+                                </div>
+                            </div>
+                        );
+                    })}
             </Slider>
         </div>
     );

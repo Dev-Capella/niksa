@@ -5,15 +5,16 @@ import misyon from "../../assets/AboutUs/misyon.png";
 import vizyon from "../../assets/AboutUs/vizyon.png";
 import kalite from "../../assets/AboutUs/kalite.png";
 import AboutusBanner from "../../assets/AboutUs/aboutban1.jpg";
-
+import { GrCertificate } from "react-icons/gr";
 const About = () => {
     return (
         <>
             <BreadcrumbsNav imageSrc={AboutusBanner} text={"Hakkımızda"} />
             <div className="w-full h-full py-10">
-                
                 <div className="flex w-full bgs-[#343280] bg-[#f6f6f6] h-auto py-10 justify-center items-center flex-col">
-                    <h1 className="text-3xl font-medium"><img src={BizKimiz} alt="Niksa Metal" /></h1>
+                    <h1 className="text-3xl font-medium">
+                        <img src={BizKimiz} alt="Niksa Metal" />
+                    </h1>
                     <p className="p-10 text-black text-center">
                         <b>Niksa Metal</b>, Bursa merkezli operasyonu ve 30 yılı
                         aşkın tecrübesiyle; kaynaklı imalat, yüzey işlem ve
@@ -73,6 +74,12 @@ const About = () => {
                         merkezine koyarak, kaliteli ve güçlü çözümler
                         üretiyoruz. Güvenilir ortağınız Niksa Metal ile,
                         ihtiyaçlarınıza en uygun metal bileşenlerini keşfedin.
+                    </p>
+                </div>
+                <div className="flex w-full bgs-[#343280] bg-[#f6f6f6] h-auto py-5 flex-col justify-center items-center">
+                    <GrCertificate size={64} />
+                    <p className="text-2xl font-semibold text-gray-600">
+                        Sertifikalarımız
                     </p>
                 </div>
             </div>

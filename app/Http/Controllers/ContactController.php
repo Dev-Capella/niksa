@@ -40,7 +40,7 @@ class ContactController extends Controller
                     'phone' => $data['phone'],  
                     'subject' => $data['subject'],
                 ];
-                Mail::to('onurcopoglu@gmail.com')->send(new SendContactMail($details));
+                Mail::to('copogluemirhan@outlook.com')->send(new SendContactMail($details));
                 return response()->json([
                     'message' => 'Success',
                     'statusCode' => http_response_code(),

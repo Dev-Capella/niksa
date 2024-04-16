@@ -73,14 +73,15 @@ const ProductCarousel = () => {
                     products.map((item, i) => (
                         <div
                             key={i}
-                            className="flex justify-center items-center "
+                            className="flex flex-row justify-center items-center"
+                            style={{ display: "flex" }}
                         >
                             <img
                                 className="w-10/12 h-10/12"
                                 src={item.image}
                                 alt={item.image_alt}
                             />
-                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+                            <div className="absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
                                 <p className="text-xl font-bold max-sm:text-xs text-center text-black bg-gray-100 ">
                                     {item.name}
                                 </p>
