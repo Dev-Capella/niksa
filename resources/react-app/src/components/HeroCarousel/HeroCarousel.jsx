@@ -54,11 +54,7 @@ const HeroCarousel = () => {
         infinite: true,
         speed: 1000,
         autoplay: true,
-<<<<<<< HEAD
         autoplaySpeed: 5000,
-=======
-        autoplaySpeed: 4000,
->>>>>>> main
         slidesToShow: 1,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
@@ -77,11 +73,7 @@ const HeroCarousel = () => {
                                 className="text-center w-full h-screen relative "
                             >
                                 <img
-<<<<<<< HEAD
                                     className="w-screen h-full object-cover scale-up-center"
-=======
-                                    className=" w-screen h-full object-cover"
->>>>>>> main
                                     src={item.image}
                                     alt="HomeSlider"
                                 />

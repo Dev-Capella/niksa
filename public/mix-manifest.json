@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-    "/js/app.js": "/js/app.js?id=815dadf8252db26e77b027231110592a",
-=======
-    "/js/app.js": "/js/app.js?id=9b6a9c00d967966fd1bc9f2ce2d73d93",
->>>>>>> main
+    "/js/app.js": "/js/app.js?id=5ae5ac48306f32040e17f34f39dbc953",
     "/css/app.css": "/css/app.css?id=68b329da9893e34099c7d8ad5cb9c940",
     "/favicon.ico": "/favicon.ico?id=b813881ffe7b1199eee34977e7a31bf9",
     "/fonts/vendor/slick-carousel/slick/slick.eot": "/fonts/vendor/slick-carousel/slick/slick.eot?id=4bb08b6ed048eaf8be2a371ffc8faec2",
@@ -13,6 +9,7 @@
     "/images/about1.jpg": "/images/about1.jpg?id=272320c59d641a681e73c8d0f658e82c",
     "/images/aboutban1.jpg": "/images/aboutban1.jpg?id=2b58d51976d948c2e5ed6f5b14f619b7",
     "/images/aboutban2.jpg": "/images/aboutban2.jpg?id=28c341bd92b7a2c710d503c8e5469ebd",
+    "/images/aboutbannerss.jpg": "/images/aboutbannerss.jpg?id=ac7c38e2a81677e07791d9d69e7d11ee",
     "/images/aboutus.png": "/images/aboutus.png?id=275b04efe4990ba8de9208fd04c96834",
     "/images/aboutuslogo.png": "/images/aboutuslogo.png?id=00aa545b4bc57a5ada7049d0f098d424",
     "/images/banner.jpg": "/images/banner.jpg?id=fd34fc9745792e8cbb45db1c5cb7565b",
@@ -55,11 +52,7 @@
     "/logo192.png": "/logo192.png?id=995306f3f1b50873ba0fe4c857a90d22",
     "/logo512.png": "/logo512.png?id=93c81d868a39562d52258e5b5b267644",
     "/manifest.json": "/manifest.json?id=d9d975cebe2ec20b6c652e1e4c12ccf0",
-<<<<<<< HEAD
-    "/mix-manifest.json": "/mix-manifest.json?id=29081bb4ac098d4cb858bc2d99228388",
-=======
-    "/mix-manifest.json": "/mix-manifest.json?id=29b5acea2a403253006a03ca633750fe",
->>>>>>> main
+    "/mix-manifest.json": "/mix-manifest.json?id=e4cfe28d4b0846298aa75e287479219a",
     "/robots.txt": "/robots.txt?id=fa1ded1ed7c11438a9b0385b1e112850",
     "/storage.zip": "/storage.zip?id=44fa94fd8df429aae53e493c00be3482",
     "/storage_old/home-sliders/April2024/bzdB4c8G1dg9x0nfbovA.png": "/storage_old/home-sliders/April2024/bzdB4c8G1dg9x0nfbovA.png?id=b5878986b9c19ab088a85958b7c8d0f5",
@@ -123,6 +116,5 @@
     "/storage_old/products/April2024/vlGU8R9WqZfpdaF3QgX0.png": "/storage_old/products/April2024/vlGU8R9WqZfpdaF3QgX0.png?id=3766416dfcf7f0b63cf37cf4e902b34e",
     "/storage_old/products/April2024/xYkjw6v5iMAqbE1E0YgG.png": "/storage_old/products/April2024/xYkjw6v5iMAqbE1E0YgG.png?id=db160df50de2032994b1efd717555465",
     "/storage_old/products/April2024/yOpz8pG9nG637isH9nPt.png": "/storage_old/products/April2024/yOpz8pG9nG637isH9nPt.png?id=5634e739e39aeb409afb1e335117b872",
-    "/storage_old/products/April2024/zL1QDf6z1H4KbtpoiKa1.png": "/storage_old/products/April2024/zL1QDf6z1H4KbtpoiKa1.png?id=041f9e43265b208b61f15ff49cd1557b",
-    "/images/aboutbannerss.jpg": "/images/aboutbannerss.jpg?id=ac7c38e2a81677e07791d9d69e7d11ee"
+    "/storage_old/products/April2024/zL1QDf6z1H4KbtpoiKa1.png": "/storage_old/products/April2024/zL1QDf6z1H4KbtpoiKa1.png?id=041f9e43265b208b61f15ff49cd1557b"
 }
