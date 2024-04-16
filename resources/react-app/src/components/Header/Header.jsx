@@ -5,8 +5,8 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import HeaderLogo from "../../assets/HeaderLogo/headerlogo.png";
 import whitelogo from "../../assets/HeaderLogo/whitelogo.png";
-
-const Header = () => {
+import generalService from "../../services/generalService";
+const Header = ({ data }) => {
     const [navbar, setNavbar] = useState(false);
     const [navItem, setNavItem] = useState(" ");
     const navigate = useNavigate();
@@ -27,15 +27,16 @@ const Header = () => {
             window.removeEventListener("scroll", changeBackground);
         };
     }, []);
+
+    const isMobile = window.innerWidth <= 768;
+
     const navigation = [
         { name: "Anasayfa", href: "/" },
         { name: "Hakkımızda", href: "/hakkimizda" },
         { name: "Ürünlerimiz", href: "/urunler" },
+        { name: "Katalog", href: data?.catalog_url, target: "1" },
         { name: "İletişim", href: "/iletisim" },
     ];
-    const isMobile = window.innerWidth <= 768;
-
-    useEffect(() => {}, [slug]);
     return (
         <Disclosure
             as="nav"
@@ -174,7 +175,25 @@ const Header = () => {
                                             >
                                                 Ürünlerimiz
                                             </a>
-
+                                            <a
+                                                className={
+                                                    navItem === "katalog"
+                                                        ? `text-base font-semibold underline-offset-8 ${
+                                                              navbar
+                                                                  ? "text-black underline"
+                                                                  : "underline"
+                                                          }`
+                                                        : `text-base font-medium ${
+                                                              navbar
+                                                                  ? "text-black text-with-underline2"
+                                                                  : "text-with-underline"
+                                                          }`
+                                                }
+                                                href={data?.catalog_url}
+                                                target="blank"
+                                            >
+                                                Katalog
+                                            </a>
                                             <a
                                                 className={
                                                     navItem === "/iletisim"
