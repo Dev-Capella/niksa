@@ -2,9 +2,6 @@ import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import carousel1 from "../../assets/HomeSlider/carousel1.png";
-import carousel2 from "../../assets/HomeSlider/carousel2.jpg";
-import carousel3 from "../../assets/HomeSlider/carousel3.jpg";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import generalService from "../../services/generalService";
 
@@ -57,7 +54,11 @@ const HeroCarousel = () => {
         infinite: true,
         speed: 1000,
         autoplay: true,
+<<<<<<< HEAD
         autoplaySpeed: 5000,
+=======
+        autoplaySpeed: 4000,
+>>>>>>> main
         slidesToShow: 1,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
@@ -76,15 +77,16 @@ const HeroCarousel = () => {
                                 className="text-center w-full h-screen relative "
                             >
                                 <img
+<<<<<<< HEAD
                                     className="w-screen h-full object-cover scale-up-center"
+=======
+                                    className=" w-screen h-full object-cover"
+>>>>>>> main
                                     src={item.image}
                                     alt="HomeSlider"
                                 />
                                 <div className="absolute inset-0 bg-black opacity-50"></div>
                                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">
-                                    <h4 className="text-xl font-bold">
-                                        {item.title}
-                                    </h4>
                                     <h1 className="text-4xl font-bold">
                                         {item.title}
                                     </h1>

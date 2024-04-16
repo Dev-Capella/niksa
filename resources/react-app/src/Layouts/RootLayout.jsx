@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Header from "../components/Header/Header.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import { Outlet } from "react-router-dom";
+<<<<<<< HEAD
 import LoadingPage from "../components/Loading/Loading.jsx";
 import generalService from "../services/generalService.js";
 const RootLayout = () => {
@@ -36,6 +37,17 @@ const RootLayout = () => {
                     <Footer data={data} />
                 </>
             )}
+=======
+
+const RootLayout = () => {
+    return (
+        <>
+            <Header />
+            <div>
+                <Outlet />
+            </div>
+            <Footer />
+>>>>>>> main
         </>
     );
 };
