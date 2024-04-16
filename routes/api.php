@@ -47,3 +47,27 @@ Route::get('/get-page/{slug}', [
     PageController::class,
     'getPage',
 ]);
+
+//About us
+Route::get('/get-aboutus', [
+    HomeController::class,
+    'getAboutUs',
+]);
+
+//Home Slogan
+Route::get('/get-slogan', [
+    HomeController::class,
+    'getHomeSlogan',
+]);
+
+//Catalog
+Route::get('/get-catalog', [
+    HomeController::class,
+    'getCatalog',
+]);
+
+//Sertifika
+Route::get('/get-certificate', [
+    HomeController::class,
+    'getCertificate',
+]);

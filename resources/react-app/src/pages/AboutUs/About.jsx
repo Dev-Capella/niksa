@@ -1,86 +1,66 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import BreadcrumbsNav from "../../components/BreadcrumbsNav/BreadcrumbsNav";
-import BizKimiz from "../../assets/AboutUs/weare.png";
-import misyon from "../../assets/AboutUs/misyon.png";
-import vizyon from "../../assets/AboutUs/vizyon.png";
-import kalite from "../../assets/AboutUs/kalite.png";
 import AboutusBanner from "../../assets/AboutUs/aboutban1.jpg";
-import { GrCertificate } from "react-icons/gr";
+import AboutBanner from "../../assets/AboutUs/aboutbannerss.jpg";
+import generalService from "../../services/generalService";
+
 const About = () => {
+    const [data, setData] = useState(null);
+    const [certificate, setCertificate] = useState(null);
+
+    const getAboutus = async () => {
+        const result = await generalService.getAboutUs();
+        setData(result);
+    };
+    const getCertificate = async () => {
+        const result = await generalService.getCertificate();
+        setCertificate(result);
+    };
+    useEffect(() => {
+        getAboutus();
+        getCertificate();
+    }, []);
     return (
         <>
-            <BreadcrumbsNav imageSrc={AboutusBanner} text={"Hakkımızda"} />
-            <div className="w-full h-full py-10">
-                <div className="flex w-full bgs-[#343280] bg-[#f6f6f6] h-auto py-10 justify-center items-center flex-col">
-                    <h1 className="text-3xl font-medium">
-                        <img src={BizKimiz} alt="Niksa Metal" />
-                    </h1>
-                    <p className="p-10 text-black text-center">
-                        <b>Niksa Metal</b>, Bursa merkezli operasyonu ve 30 yılı
-                        aşkın tecrübesiyle; kaynaklı imalat, yüzey işlem ve
-                        metal kaplama alanlarında projelerini ilerletmektedir.
-                        Şirketimiz yenilenen dinamizm ve üst seviye
-                        geliştirilmiş çalışma prensipleriyle faaliyetlerine
-                        hızla devam etmektedir.
-                    </p>
-                </div>
-                <div className="flex w-5/6 bg-[#343280]  h-auto py-5 my-5 items-center px-5">
-                    <img className="w-16 h-auto" src={vizyon} alt="Vizyon" />
-                    <div className="p-10 text-white text-start">
-                        {/* Vizyon */}
-                        <p className="text-2xl">Vizyon</p>
-                        <p>
-                            Müşteri memnuniyetini odak noktası olarak belirleyen
-                            Niksa Metal, beklentileri karşılamak için titizlikle
-                            çalışır. Kaliteli ve güçlü çözümler üretme
-                            yolculuğunda güvenilir bir ortak olarak,
-                            müşterilerine dayanıklı metal bileşenlerini sunar ve
-                            ihtiyaçlarına en iyi şekilde yanıt verir.
-                        </p>
-                    </div>
-                    <p></p>
-                </div>
-                <div className="flex justify-end ">
-                    <div className="flex w-5/6 bg-[#343280]  h-auto py-5 my-5 px-5 items-center">
-                        <div className="p-10 text-white text-end">
-                            {/* Misyon */}
-                            <p className="text-2xl">Misyon</p>
-                            <p>
-                                Sektörde öncü konumunu sürdürerek, kaynaklı
-                                imalat, yüzey işlem ve metal kaplama alanlarında
-                                ileri teknoloji ve zanaatkarlığın birleşimini
-                                sunmayı hedefler. Yenilikçi yaklaşımıyla
-                                sektörde öncü olmaya devam eder.
-                            </p>
-                        </div>
+            <BreadcrumbsNav imageSrc={AboutusBanner} text={data?.title} />
+            <div className="flex justify-center items-center">
+                {" "}
+                <div className="container mx-atuo px-10 relative flex justify-between items-start mt-10">
+                    <div className="relative  -top-32 w-2/6 max-lg:hidden">
                         <img
-                            className="w-16 h-auto "
-                            src={misyon}
-                            alt="Misyon"
+                            className=" w-full h-full"
+                            src={AboutBanner}
+                            alt="Banner Hakkımızda"
                         />
                     </div>
-                </div>
-                <div className="flex w-full bgs-[#343280] bg-[#f6f6f6] h-auto py-5 flex-col justify-center items-center">
-                    <img className="w-16 h-auto" src={kalite} alt="Kalite" />
-                    <p className="text-2xl font-semibold text-gray-600">
-                        Kalite Anlayışımız
-                    </p>
-                </div>
-                <div className="flex w-full h-auto pb-10 flex-col justify-center items-center">
-                    <p className="p-10 text-center">
-                        30 yılı aşkın deneyimiyle kaliteden ödün vermeyen bir
-                        yaklaşımla kaynaklı imalat, yüzey işlem ve metal kaplama
-                        alanlarında öncüdür. Müşteri memnuniyetini misyonumuzun
-                        merkezine koyarak, kaliteli ve güçlü çözümler
-                        üretiyoruz. Güvenilir ortağınız Niksa Metal ile,
-                        ihtiyaçlarınıza en uygun metal bileşenlerini keşfedin.
-                    </p>
-                </div>
-                <div className="flex w-full bgs-[#343280] bg-[#f6f6f6] h-auto py-5 flex-col justify-center items-center">
-                    <GrCertificate size={64} />
-                    <p className="text-2xl font-semibold text-gray-600">
-                        Sertifikalarımız
-                    </p>
+
+                    <div className="w-4/6 pl-10  max-md:pl-0 flex flex-col max-lg:w-full">
+                        <p className="text-3xl max-md:text-xl">{data?.title}</p>
+                        <div className="mt-5">
+                            <div
+                                className="text-lg max-md:text-base"
+                                dangerouslySetInnerHTML={{
+                                    __html: data?.content,
+                                }}
+                            />
+                        </div>
+                        <p className="text-3xl max-md:text-xl mt-5">
+                            Sertifikalarımız
+                        </p>
+                        <div className="mt-5 flex flex-wrap gap-5">
+                            {certificate?.map((item, i) => (
+                                <div
+                                    className="w-56 h-auto flex flex-col"
+                                    key={i}
+                                >
+                                    <a href={item.image} target="blank">
+                                        <img src={item.image} alt={item.name} />
+                                    </a>
+                                    <p className="pt-2">{item.name}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

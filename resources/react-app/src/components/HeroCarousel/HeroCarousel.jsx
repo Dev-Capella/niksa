@@ -55,14 +55,14 @@ const HeroCarousel = () => {
         dots: true,
         fade: true,
         infinite: true,
-        speed: 4000,
+        speed: 1000,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 5000,
         slidesToShow: 1,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
-        waitForAnimate: true,
+        waitForAnimate: false,
     };
 
     return (
@@ -76,7 +76,7 @@ const HeroCarousel = () => {
                                 className="text-center w-full h-screen relative "
                             >
                                 <img
-                                    className="w-screen h-full object-cover"
+                                    className="w-screen h-full object-cover scale-up-center"
                                     src={item.image}
                                     alt="HomeSlider"
                                 />
