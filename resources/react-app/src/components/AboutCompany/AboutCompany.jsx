@@ -17,9 +17,9 @@ const AboutCompany = () => {
                         </p>
                     </div>
                     <p className="my-2 text-base font-normal text-center">
-                        2021 yılında %100 yerli sermaye ile kurulan Özayaz Boru,
-                        hem Türkiye'de hem de yurt dışında bulunduğu sektörde en
-                        büyük tedarikçiler arasında yer almayı hedeflemektedir.
+                        Niksa Metal, Bursa merkezli operasyonu ve 30 yılı aşkın
+                        tecrübesiyle; kaynaklı imalat, yüzey işlem ve metal
+                        kaplama alanlarında projelerini ilerletmektedir.
                     </p>
                 </div>
                 <div className="flex justify-start items-center flex-col w-64 h-80">
@@ -31,9 +31,9 @@ const AboutCompany = () => {
                     </div>
 
                     <p className="my-2 text-base font-normal text-center">
-                        Rekabetçi ve sürdürülebilir büyüme potansiyeli olan
-                        “üretim gücünü” stratejik portföyü ile doğru şekilde
-                        yönetmek
+                        Sektörde öncü konumunu sürdürerek, kaynaklı imalat,
+                        yüzey işlem ve metal kaplama alanlarında ileri teknoloji
+                        ve zanaatkarlığın birleşimini sunmayı hedefler.
                     </p>
                 </div>
                 <div className="flex justify-start items-center flex-col w-64 h-80">
@@ -45,8 +45,9 @@ const AboutCompany = () => {
                     </div>
 
                     <p className="my-2 text-base font-normal text-center">
-                        Sektörde, Türkiye’nin bir numaralı, dünyanın sayılı boru
-                        tedarik şirketi olmak
+                        Müşteri memnuniyetini odak noktası olarak belirleyen
+                        Niksa Metal, beklentileri karşılamak için titizlikle
+                        çalışır.
                     </p>
                 </div>
                 <div className="flex justify-start items-center flex-col w-64 h-80">
@@ -58,8 +59,10 @@ const AboutCompany = () => {
                     </div>
 
                     <p className="my-2 text-base font-normal text-center">
-                        12.000 m2'si kapalı olmak üzere toplamda 20.000 m2 alan
-                        üzerine kurulu üretim tesisimiz ile hizmetinizdeyiz.
+                        Modern teknolojiye sahip üretim tesisimizde, kaliteli
+                        ürünlerimizi titizlikle üretiyoruz. Yüksek standartlara
+                        ve müşteri memnuniyetine odaklanarak, sektörde öncü bir
+                        konumda yer alıyoruz.
                     </p>
                 </div>
                 <div className="flex justify-start items-center flex-col w-64 h-80">
@@ -71,10 +74,9 @@ const AboutCompany = () => {
                     </div>
 
                     <p className="my-2 text-base font-normal text-center">
-                        Kalite ve standardizasyon bizim için çok önemlidir. Bu
-                        yüzden nitelikli ve eğitimli ekibimiz tarafından, üretim
-                        hattımızdan çıkan her ürün gerekli tüm analiz ve testler
-                        yapılarak titizlikle kontrol edilir.
+                        30 yılı aşkın deneyimiyle kaliteden ödün vermeyen bir
+                        yaklaşımla kaynaklı imalat, yüzey işlem ve metal kaplama
+                        alanlarında öncüdür.
                     </p>
                 </div>
             </div>
