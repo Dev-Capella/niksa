@@ -5,6 +5,7 @@ import Footer from "../components/Footer/Footer.jsx";
 import { Outlet } from "react-router-dom";
 import LoadingPage from "../components/Loading/Loading.jsx";
 import generalService from "../services/generalService.js";
+import FixedContact from "../components/FixedContact/FixedContact.jsx";
 const RootLayout = () => {
     const [loading, setLoading] = useState(true);
 
@@ -31,6 +32,7 @@ const RootLayout = () => {
             ) : (
                 <>
                     <Header data={data} />
+                    <FixedContact />
                     <div>
                         <Outlet />
                     </div>
