@@ -6,6 +6,7 @@ import demir from "../../assets/ProductSlider/demir.jpg";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import { useState, useEffect } from "react";
 import generalService from "../../services/generalService";
+import { useTranslation } from "react-i18next";
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -39,6 +40,11 @@ function SamplePrevArrow(props) {
 }
 
 const ProductCarousel = () => {
+    const { t, i18n } = useTranslation();
+    const clickHandle = async (lang) => {
+        await i18n.changeLanguage(lang);
+    };
+
     const [products, setProducts] = useState(null);
     useEffect(() => {
         const fetchData = async () => {
@@ -65,7 +71,7 @@ const ProductCarousel = () => {
         <div className="slider-container  container mx-auto mt-10 mb-36 product-carousel">
             <div>
                 <p className="text-center font-bold text-4xl mb-12 text-[#343280]">
-                    ÜRÜNLERİMİZ
+                    {t("HomePageProduct")}
                 </p>
             </div>
             <Slider className=" flex" {...settings}>

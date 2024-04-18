@@ -4,7 +4,12 @@ import prodcutBanner from "../../assets/product/productbanner.jpg";
 import generalService from "../../services/generalService";
 import { useParams } from "react-router-dom";
 import LoadingPage from "../../components/Loading/Loading.jsx";
+import { useTranslation } from "react-i18next";
 function Products() {
+    const { t, i18n } = useTranslation();
+    const clickHandle = async (lang) => {
+        await i18n.changeLanguage(lang);
+    };
     const [products, setProducts] = useState(null);
     const [pagination, setPagination] = useState(1);
     const [paginationValue, setPaginationValue] = useState(null);
@@ -59,9 +64,9 @@ function Products() {
                 <div className="container mx-auto my-10">
                     <div className="p-4">
                         <ul className="flex gap-5 text-sm uppercase tracking-wide cursor-pointer">
-                            <li>Tümü</li>
-                            <li>Masa Ayağı</li>
-                            <li>Sandalye Ayağı</li>
+                            <li>{t("ProductAll")}</li>
+                            <li>{t("ProductFilter1")}</li>
+                            <li>{t("ProductFilter2")}</li>
                         </ul>
                     </div>
                     <div className="flex flex-wrap justify-start">

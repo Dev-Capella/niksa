@@ -4,7 +4,12 @@ import { FaPhone } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 const Footer = ({ data }) => {
+    const { t, i18n } = useTranslation();
+    const clickHandle = async (lang) => {
+        await i18n.changeLanguage(lang);
+    };
     return (
         <div className="w-full h-full relative">
             <div className="px-48 max-lg:px-10 max-lg:py-10 max-lg:flex-wrap max-lg:justify-between py-20 flex flex-row bg-[#343280] w-full h-auto justify-start items-start gap-2">
@@ -27,7 +32,7 @@ const Footer = ({ data }) => {
                                 href="hakkimizda"
                                 target="blank"
                             >
-                                Anasayfa
+                                {t("FooterHome")}
                             </a>
                         </li>
                         <li>
@@ -36,7 +41,7 @@ const Footer = ({ data }) => {
                                 href="hakkimizda"
                                 target="blank"
                             >
-                                Hakkımızda
+                                {t("FooterAboutUs")}
                             </a>
                         </li>
                         <li>
@@ -45,7 +50,7 @@ const Footer = ({ data }) => {
                                 href="urunler"
                                 target="blank"
                             >
-                                Ürünler
+                                {t("FooterProduct")}
                             </a>
                         </li>
                         <li>
@@ -54,7 +59,7 @@ const Footer = ({ data }) => {
                                 href={data?.catalog_url}
                                 target="blank"
                             >
-                                Katalog
+                                {t("FooterCatalog")}
                             </a>
                         </li>
                         <li>
@@ -63,7 +68,7 @@ const Footer = ({ data }) => {
                                 href="iletisim"
                                 target="blank"
                             >
-                                İletişim
+                                {t("FooterContact")}
                             </a>
                         </li>
                     </ul>
@@ -72,7 +77,7 @@ const Footer = ({ data }) => {
                     <ul className="text-white flex flex-col gap-2">
                         <li>
                             <h4 className="font-bold text-2xl text-white mb-3">
-                                İletişim Bilgilerimiz
+                                {t("FooterContactİnfo")}
                             </h4>
                         </li>
                         <li className="flex justify-start items-center gap-3">

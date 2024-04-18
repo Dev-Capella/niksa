@@ -6,9 +6,14 @@ import { useState, useEffect } from "react";
 import HeaderLogo from "../../assets/HeaderLogo/headerlogo.png";
 import whitelogo from "../../assets/HeaderLogo/whitelogo.png";
 import generalService from "../../services/generalService";
+import { useTranslation } from "react-i18next";
+
 const Header = ({ data }) => {
     const [navbar, setNavbar] = useState(false);
     const [navItem, setNavItem] = useState(" ");
+    const [langOpen, setLangOpen] = useState(false);
+    const { t, i18n } = useTranslation();
+
     const navigate = useNavigate();
     const changeBackground = () => {
         if (window.scrollY >= 100) {
@@ -37,6 +42,12 @@ const Header = ({ data }) => {
         { name: "Katalog", href: data?.catalog_url, target: "1" },
         { name: "İletişim", href: "/iletisim" },
     ];
+    /*Dil değiştirme*/
+    const changeLanguage = (lang) => {
+        setLangOpen(false);
+        i18n.changeLanguage(lang);
+        localStorage.setItem("lang", lang);
+    };
     return (
         <Disclosure
             as="nav"
@@ -137,7 +148,7 @@ const Header = ({ data }) => {
                                                 }
                                                 href="/"
                                             >
-                                                Anasayfa
+                                                {t("HeaderHome")}
                                             </a>
                                             <a
                                                 className={
@@ -155,7 +166,7 @@ const Header = ({ data }) => {
                                                 }
                                                 href="/hakkimizda"
                                             >
-                                                Hakkımızda
+                                                {t("HeaderAboutUs")}
                                             </a>
                                             <a
                                                 className={
@@ -173,7 +184,7 @@ const Header = ({ data }) => {
                                                 }
                                                 href="/urunler"
                                             >
-                                                Ürünlerimiz
+                                                {t("HeaderProduct")}
                                             </a>
                                             <a
                                                 className={
@@ -192,7 +203,7 @@ const Header = ({ data }) => {
                                                 href={data?.catalog_url}
                                                 target="blank"
                                             >
-                                                Katalog
+                                                {t("HeaderCatalog")}
                                             </a>
                                             <a
                                                 className={
@@ -210,8 +221,27 @@ const Header = ({ data }) => {
                                                 }
                                                 href="/iletisim"
                                             >
-                                                İletişim
+                                                {t("HeaderContact")}
                                             </a>
+
+                                            <div>
+                                                <p
+                                                    className="text-blue-500"
+                                                    onClick={() =>
+                                                        changeLanguage("tr")
+                                                    }
+                                                >
+                                                    TR
+                                                </p>
+                                                <p
+                                                    className="text-blue-500"
+                                                    onClick={() =>
+                                                        changeLanguage("en")
+                                                    }
+                                                >
+                                                    EN
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

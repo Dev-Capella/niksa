@@ -1,11 +1,12 @@
 import React from "react";
 import { BsSend } from "react-icons/bs";
-
+import { useTranslation } from "react-i18next";
 import * as Yup from "yup";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import generalService from "../../services/generalService";
 import { useFormik, ErrorMessage } from "formik";
+
 const validationSchema = Yup.object().shape({
     fullname: Yup.string().required("Ad alanı zorunludur"),
     subject: Yup.string().required("Konu alanı zorunludur"),
@@ -17,6 +18,11 @@ const validationSchema = Yup.object().shape({
 });
 
 const contactForm = () => {
+    const { t, i18n } = useTranslation();
+    const clickHandle = async (lang) => {
+        await i18n.changeLanguage(lang);
+    };
+
     const formik = useFormik({
         initialValues: {
             fullname: "",
@@ -36,51 +42,49 @@ const contactForm = () => {
             }
         },
     });
-   
+
     const notifySucces = () =>
-    toast.success("Formunuz Başarıyla Gönderilmiştir.", {
-        position: "bottom-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-    });
-const notifyError = () =>
-    toast.error("Form Gönderilirken Hata Oluştu.", {
-        
-        position: "bottom-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-    });
-   
+        toast.success("Formunuz Başarıyla Gönderilmiştir.", {
+            position: "bottom-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+        });
+    const notifyError = () =>
+        toast.error("Form Gönderilirken Hata Oluştu.", {
+            position: "bottom-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+        });
+
     return (
         <div className="flex justify-center w-full">
-           <ToastContainer
-            className="toastContainer z-[9999999]"
-            position="top-right"
-            autoClose={5000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable={false}
-            pauseOnHover
-            theme="light"
-          
+            <ToastContainer
+                className="toastContainer z-[9999999]"
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable={false}
+                pauseOnHover
+                theme="light"
             />
             <div className=" bg-white flex flex-col justify-center w-[61rem] max-lg:w-10/12 max-lg:p-12 p-20 max-sm:w-full max-sm:p-4 max-sm:pt-20 max-sm:pb-20 max-sm:ml-2 max-sm:mr-2 shadow-2xl rounded">
                 <div className="flex flex-row justify-between items-center  pb-10">
                     <p className="font-semibold text-gray-800  text-5xl max-lg:text-2xl max-sm:text-3xl">
-                        Bizimle iletişime geç
+                        {t("ContactWithUs")}
                     </p>
                     <BsSend
                         size={56}
@@ -96,7 +100,6 @@ const notifyError = () =>
                     <form
                         className="flex flex-col justify-between gap-4"
                         onSubmit={formik.handleSubmit}
-                      
                     >
                         <div className="flex flex-row justify-between gap-4">
                             <input
@@ -108,7 +111,7 @@ const notifyError = () =>
                                 }`}
                                 id="fullname"
                                 name="fullname"
-                                placeholder="Ad soyad"
+                                placeholder={t("ContactName")}
                                 type="text"
                                 onChange={formik.handleChange}
                                 value={formik.values.fullname}
@@ -121,7 +124,7 @@ const notifyError = () =>
                                 }`}
                                 id="mail"
                                 name="mail"
-                                placeholder="Mail"
+                                placeholder={t("ContactMail")}
                                 type="mail"
                                 onChange={formik.handleChange}
                                 value={formik.values.mail}
@@ -136,7 +139,7 @@ const notifyError = () =>
                                 }`}
                                 id="phone"
                                 name="phone"
-                                placeholder="Telefon"
+                                placeholder={t("ContactNumber")}
                                 type="phone"
                                 onChange={formik.handleChange}
                                 value={formik.values.phone}
@@ -150,7 +153,7 @@ const notifyError = () =>
                                 }`}
                                 id="subject"
                                 name="subject"
-                                placeholder="Konu"
+                                placeholder={t("ContactSubject")}
                                 type="subject"
                                 onChange={formik.handleChange}
                                 value={formik.values.subject}
@@ -166,7 +169,7 @@ const notifyError = () =>
                                 }`}
                                 id="message"
                                 name="message"
-                                placeholder="Konu"
+                                placeholder={t("ContactMessage")}
                                 type="message"
                                 onChange={formik.handleChange}
                                 value={formik.values.message}
@@ -174,15 +177,13 @@ const notifyError = () =>
                         </div>
                         <div className="flex flex-row justify-between pt-7 max-sm:gap-4 ">
                             <p className="w-full max-w-xl break-words text-gray-400 text-sm font-medium max-sm:text-xs ">
-                                Gizliliğinizi korumayı taahhüt ediyoruz. Açık
-                                izniniz olmadan asla hakkınızda bilgi
-                                toplamayacağız.
+                                {t("ContactPrivate")}
                             </p>
                             <button
                                 type="submit"
                                 className="bg-[#343280] hover:bg-[#2b2969] font-semibold text-sm text-white  h-12 w-36 max-sm:w-48 rounded-full transition duration-300 transform hover:translate-y-1"
                             >
-                                Gönder
+                                {t("ContactSendbutton")}
                             </button>
                         </div>
                     </form>

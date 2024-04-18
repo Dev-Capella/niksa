@@ -3,8 +3,13 @@ import BreadcrumbsNav from "../../components/BreadcrumbsNav/BreadcrumbsNav";
 import AboutusBanner from "../../assets/AboutUs/aboutban1.jpg";
 import AboutBanner from "../../assets/AboutUs/aboutbannerss.jpg";
 import generalService from "../../services/generalService";
-
+import { useTranslation } from "react-i18next";
 const About = () => {
+    const { t, i18n } = useTranslation();
+    const clickHandle = async (lang) => {
+        await i18n.changeLanguage(lang);
+    };
+
     const [data, setData] = useState(null);
     const [certificate, setCertificate] = useState(null);
 
@@ -45,7 +50,7 @@ const About = () => {
                             />
                         </div>
                         <p className="text-3xl max-md:text-xl mt-5">
-                            Sertifikalarımız
+                            {t("AboutUsCertificate")}
                         </p>
                         <div className="mt-5 flex flex-wrap gap-5">
                             {certificate?.map((item, i) => (
