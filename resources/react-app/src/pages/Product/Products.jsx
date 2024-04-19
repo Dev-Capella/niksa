@@ -62,13 +62,6 @@ function Products() {
                 <LoadingPage />
             ) : (
                 <div className="container mx-auto my-10">
-                    <div className="p-4">
-                        <ul className="flex gap-5 text-sm uppercase tracking-wide cursor-pointer">
-                            <li>{t("ProductAll")}</li>
-                            <li>{t("ProductFilter1")}</li>
-                            <li>{t("ProductFilter2")}</li>
-                        </ul>
-                    </div>
                     <div className="flex flex-wrap justify-start">
                         {products &&
                             products.map((item, i) => (

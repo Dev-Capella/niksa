@@ -3,8 +3,8 @@ import support from "../../assets/FixedContact/destek.png";
 import phone from "../../assets/FixedContact/phonefix.png";
 import wp from "../../assets/FixedContact/wp.png";
 import { useTranslation } from "react-i18next";
-import { FaWhatsapp } from "react-icons/fa6";
-import { FaPhone } from "react-icons/fa6";
+import { BiLogoWhatsapp } from "react-icons/bi";
+import { MdPhone } from "react-icons/md";
 import "./fixedContact.css";
 
 function FixedContact() {
@@ -20,11 +20,11 @@ function FixedContact() {
                     onMouseEnter={() => setHover1(true)}
                     onMouseLeave={() => setHover1(false)}
                 >
-                    <FaWhatsapp
+                    <BiLogoWhatsapp
                         className={
                             hover1
-                                ? "kay cursor-pointer right-[2%] w-[36px] h-[36px]"
-                                : "cursor-pointer w-[36px] h-[36px]"
+                                ? "kay cursor-pointer right-[2%] w-[36px] h-[36px] bg-white rounded-full"
+                                : "cursor-pointer w-[36px] h-[36px] bg-white rounded-full"
                         }
                     />
 
@@ -50,11 +50,11 @@ function FixedContact() {
                     onMouseEnter={() => setHover3(true)}
                     onMouseLeave={() => setHover3(false)}
                 >
-                    <FaPhone
+                    <MdPhone
                         className={
                             hover3
-                                ? "kay cursor-pointer right-[2%] w-[32px] h-[32px]"
-                                : "w-[32px] h-[32px] cursor-pointer"
+                                ? "kay cursor-pointer right-[2%] w-[32px] h-[32px] bg-white rounded-2xl"
+                                : "w-[32px] h-[32px] cursor-pointer bg-white rounded-2xl"
                         }
                     />
 
