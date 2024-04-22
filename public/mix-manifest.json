@@ -1,5 +1,5 @@
 {
-    "/js/app.js": "/js/app.js",
+    "/js/app.js": "/js/app.js?id=3dd5546265344cd268970e419556130f",
     "/css/app.css": "/css/app.css?id=68b329da9893e34099c7d8ad5cb9c940",
     "/favicon.ico": "/favicon.ico?id=b813881ffe7b1199eee34977e7a31bf9",
     "/fonts/vendor/slick-carousel/slick/slick.eot": "/fonts/vendor/slick-carousel/slick/slick.eot?id=4bb08b6ed048eaf8be2a371ffc8faec2",
@@ -39,6 +39,7 @@
     "/images/phonefix.png": "/images/phonefix.png?id=35dd9a2f51f6cce73ae6444fe2b41c6b",
     "/images/prodcuts.png": "/images/prodcuts.png?id=96b11076d57770db9cf924ba52a28809",
     "/images/productbanner.jpg": "/images/productbanner.jpg?id=a0068503d05add54249b1ab0e07deba9",
+    "/images/refexample.png": "/images/refexample.png?id=8201303f13a9b0dca0d2bb9a7f8cb208",
     "/images/twitter.png": "/images/twitter.png?id=000b6a0a60290ba1708c0ceec69fb4c1",
     "/images/vendor/slick-carousel/slick/ajax-loader.gif": "/images/vendor/slick-carousel/slick/ajax-loader.gif?id=c5f04404df58fc3deb42d69f94476b6c",
     "/images/vizyon.png": "/images/vizyon.png?id=65f715240ffaf879ee9891328722a067",
@@ -55,7 +56,7 @@
     "/logo192.png": "/logo192.png?id=995306f3f1b50873ba0fe4c857a90d22",
     "/logo512.png": "/logo512.png?id=93c81d868a39562d52258e5b5b267644",
     "/manifest.json": "/manifest.json?id=d9d975cebe2ec20b6c652e1e4c12ccf0",
-    "/mix-manifest.json": "/mix-manifest.json?id=dc107cdcc7bf3f9c757003232d9f60c5",
+    "/mix-manifest.json": "/mix-manifest.json?id=6b6e0799ef0739e7ffd6389398faacdf",
     "/robots.txt": "/robots.txt?id=fa1ded1ed7c11438a9b0385b1e112850",
     "/storage.zip": "/storage.zip?id=44fa94fd8df429aae53e493c00be3482",
     "/storage_old/home-sliders/April2024/bzdB4c8G1dg9x0nfbovA.png": "/storage_old/home-sliders/April2024/bzdB4c8G1dg9x0nfbovA.png?id=b5878986b9c19ab088a85958b7c8d0f5",

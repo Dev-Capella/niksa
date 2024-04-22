@@ -12,7 +12,7 @@ const Contact = () => {
 
     return (
         <>
-            <BreadcrumbsNav imageSrc={aboutus} text={"İletişim"} />
+            <BreadcrumbsNav imageSrc={aboutus} text={t("ContactBread")} />
             <ContactComponent />
             <GoogleMap />
         </>

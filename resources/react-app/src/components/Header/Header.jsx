@@ -41,6 +41,7 @@ const Header = ({ data }) => {
         { name: "Ürünlerimiz", href: "/urunler" },
         { name: "Katalog", href: data?.catalog_url, target: "1" },
         { name: "İletişim", href: "/iletisim" },
+        { name: "Referanslar", href: "/referanslar" },
     ];
     /*Dil değiştirme*/
     const changeLanguage = (lang) => {
@@ -222,6 +223,24 @@ const Header = ({ data }) => {
                                                 href="/iletisim"
                                             >
                                                 {t("HeaderContact")}
+                                            </a>
+                                            <a
+                                                className={
+                                                    navItem === "/referanslar"
+                                                        ? `text-base font-semibold underline-offset-8 ${
+                                                              navbar
+                                                                  ? "text-black underline"
+                                                                  : "underline"
+                                                          }`
+                                                        : `text-base font-medium ${
+                                                              navbar
+                                                                  ? "text-black"
+                                                                  : "text-with-underline"
+                                                          }`
+                                                }
+                                                href="/referanslar"
+                                            >
+                                                {t("HeaderReferance")}
                                             </a>
 
                                             <div>

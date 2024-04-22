@@ -10,6 +10,7 @@ function Products() {
     const clickHandle = async (lang) => {
         await i18n.changeLanguage(lang);
     };
+
     const [products, setProducts] = useState(null);
     const [pagination, setPagination] = useState(1);
     const [paginationValue, setPaginationValue] = useState(null);
@@ -57,7 +58,10 @@ function Products() {
     }
     return (
         <div>
-            <BreadcrumbsNav imageSrc={prodcutBanner} text={"Ürünler"} />
+            <BreadcrumbsNav
+                imageSrc={prodcutBanner}
+                text={t("ProductsBread")}
+            />
             {loading ? (
                 <LoadingPage />
             ) : (
@@ -82,6 +86,7 @@ function Products() {
                                 </div>
                             ))}
                     </div>
+
                     <div className="flex justify-center items-center">
                         <div className="flex items-center gap-4">
                             <button

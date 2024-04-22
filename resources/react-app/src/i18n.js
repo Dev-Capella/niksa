@@ -21,7 +21,11 @@ const resources = {
             HomePageQuality: "Kalite Anlayışımız",
             HomePageQualityText:
                 "30 yılı aşkın deneyimiyle kaliteden ödün vermeyen bir yaklaşımla kaynaklı imalat, yüzey işlem ve metal kaplama alanlarında öncüdür.",
-
+            /*BreadsCrumbs */
+            AboutUsBread: "Hakkımızda",
+            ProductsBread: "Ürünler",
+            ContactBread: "İletişim",
+            ReferanceBread: "Referanslar",
             /*Hakkımızda*/
             AboutUsTitle: "Hakkımızda",
             AboutUsFirstP:
@@ -53,6 +57,7 @@ const resources = {
             HeaderProduct: "Ürünler",
             HeaderCatalog: "Katalog",
             HeaderContact: "İletişim",
+            HeaderReferance: "Referanslar",
             /*Footer*/
             FooterHome: "Anasayfa",
             FooterAboutUs: "Hakkımızda",
@@ -82,6 +87,11 @@ const resources = {
             HomePageQualityText:
                 "With more than 30 years of experience, it is a pioneer in the fields of welded manufacturing, surface treatment and metal coating with an approach that does not compromise on quality.",
 
+            /*BreadsCrumbs */
+            AboutUsBread: "About Us",
+            ProductsBread: "Products",
+            ContactBread: "Contact",
+            ReferanceBread: "Referances",
             /*Hakkımızda*/
             AboutUsTitle: "About Us",
             AboutUsFirstP:
@@ -113,6 +123,7 @@ const resources = {
             HeaderProduct: "Products",
             HeaderCatalog: "Catalog",
             HeaderContact: "Contact",
+            HeaderReferance: "Referances",
             /*Footer*/
             FooterHome: "Home",
             FooterAboutUs: "About us",

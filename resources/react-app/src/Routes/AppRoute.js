@@ -5,7 +5,7 @@ import Corporate from "../pages/Corporate/Corporate";
 import Contact from "../pages/Contact/Contact";
 import RootLayout from "../layouts/RootLayout";
 import Products from "../pages/Product/Products";
-import Loading from "../components/Loading/Loading.jsx";
+import Referances from "../pages/Referances/Referances";
 
 function AppRoute() {
     return (
@@ -17,7 +17,7 @@ function AppRoute() {
                     <Route path="/hakkimizda" element={<About />} />
                     <Route path="/urunler" element={<Products />} />
                     <Route path="/iletisim" element={<Contact />} />
-                    <Route path="/loading" element={<Loading />} />
+                    <Route path="/referanslar" element={<Referances />} />
                 </Route>
             </Route>
             {/* Örnek tanımlama. 
