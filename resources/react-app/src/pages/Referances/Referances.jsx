@@ -2,7 +2,7 @@ import React from "react";
 import BreadcrumbsNav from "../../components/BreadcrumbsNav/BreadcrumbsNav";
 import ReferancesComponent from "../../components/Referances/ReferancesComponent";
 import { useTranslation } from "react-i18next";
-import aboutus from "../../assets/contact/contactban.jpg";
+import references from "../../assets/Referances/referances.jpg";
 const Referances = () => {
     const { t, i18n } = useTranslation();
     const clickHandle = async (lang) => {
@@ -11,7 +11,10 @@ const Referances = () => {
     return (
         <div>
             <>
-                <BreadcrumbsNav imageSrc={aboutus} text={t("ReferanceBread")} />
+                <BreadcrumbsNav
+                    imageSrc={references}
+                    text={t("ReferanceBread")}
+                />
                 <ReferancesComponent />
             </>
         </div>
