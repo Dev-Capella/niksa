@@ -7,6 +7,8 @@ import HeaderLogo from "../../assets/HeaderLogo/headerlogo.png";
 import whitelogo from "../../assets/HeaderLogo/whitelogo.png";
 import generalService from "../../services/generalService";
 import { useTranslation } from "react-i18next";
+import turkishflag from "../../assets/HeaderFlag/turkishflag.jpg";
+import englishflag from "../../assets/HeaderFlag/englishflag.jpg";
 
 const Header = ({ data }) => {
     const [navbar, setNavbar] = useState(false);
@@ -20,6 +22,18 @@ const Header = ({ data }) => {
             setNavbar(true);
         } else {
             setNavbar(false);
+        }
+    };
+    /*Bayrak değiştirme*/
+    const [currentFlag, setCurrentFlag] = useState("uk");
+    const toggleFlag = () => {
+        setCurrentFlag(currentFlag === "turkey" ? "uk" : "turkey");
+        if (currentFlag === "turkey") {
+            i18n.changeLanguage("tr");
+            localStorage.setItem("lang", "tr");
+        } else {
+            i18n.changeLanguage("en");
+            localStorage.setItem("lang", "en");
         }
     };
     const slug = window.location.pathname;
@@ -43,12 +57,7 @@ const Header = ({ data }) => {
         { name: "İletişim", href: "/iletisim" },
         { name: "Referanslar", href: "/referanslar" },
     ];
-    /*Dil değiştirme*/
-    const changeLanguage = (lang) => {
-        setLangOpen(false);
-        i18n.changeLanguage(lang);
-        localStorage.setItem("lang", lang);
-    };
+
     return (
         <Disclosure
             as="nav"
@@ -132,7 +141,7 @@ const Header = ({ data }) => {
                                             </div>
                                         )}
 
-                                        <div className="w-full flex justify-end items-center text-white gap-16 max-lg:gap-10">
+                                        <div className="w-full flex justify-end items-center text-white gap-16 max-lg:gap-4">
                                             <a
                                                 className={
                                                     navItem === "/"
@@ -244,22 +253,16 @@ const Header = ({ data }) => {
                                             </a>
 
                                             <div>
-                                                <p
-                                                    className="text-blue-500"
-                                                    onClick={() =>
-                                                        changeLanguage("tr")
+                                                <img
+                                                    className="w-6 cursor-pointer"
+                                                    src={
+                                                        currentFlag === "turkey"
+                                                            ? turkishflag
+                                                            : englishflag
                                                     }
-                                                >
-                                                    TR
-                                                </p>
-                                                <p
-                                                    className="text-blue-500"
-                                                    onClick={() =>
-                                                        changeLanguage("en")
-                                                    }
-                                                >
-                                                    EN
-                                                </p>
+                                                    alt="Flag"
+                                                    onClick={toggleFlag}
+                                                />
                                             </div>
                                         </div>
                                     </div>

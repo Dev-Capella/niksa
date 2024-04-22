@@ -1,5 +1,5 @@
 {
-    "/js/app.js": "/js/app.js?id=ee5a6f1ec55f760a7c9bb965cb0f0650",
+    "/js/app.js": "/js/app.js?id=20ab429770a20b7657503a6cdc542ff6",
     "/css/app.css": "/css/app.css?id=68b329da9893e34099c7d8ad5cb9c940",
     "/favicon.ico": "/favicon.ico?id=b813881ffe7b1199eee34977e7a31bf9",
     "/fonts/vendor/slick-carousel/slick/slick.eot": "/fonts/vendor/slick-carousel/slick/slick.eot?id=4bb08b6ed048eaf8be2a371ffc8faec2",
@@ -56,7 +56,7 @@
     "/logo192.png": "/logo192.png?id=995306f3f1b50873ba0fe4c857a90d22",
     "/logo512.png": "/logo512.png?id=93c81d868a39562d52258e5b5b267644",
     "/manifest.json": "/manifest.json?id=d9d975cebe2ec20b6c652e1e4c12ccf0",
-    "/mix-manifest.json": "/mix-manifest.json?id=8f2e6d7301aa88f38d56b1e7bc7349d6",
+    "/mix-manifest.json": "/mix-manifest.json?id=48578463a93f0f372109e7c1a4f0834c",
     "/robots.txt": "/robots.txt?id=fa1ded1ed7c11438a9b0385b1e112850",
     "/storage.zip": "/storage.zip?id=44fa94fd8df429aae53e493c00be3482",
     "/storage_old/home-sliders/April2024/bzdB4c8G1dg9x0nfbovA.png": "/storage_old/home-sliders/April2024/bzdB4c8G1dg9x0nfbovA.png?id=b5878986b9c19ab088a85958b7c8d0f5",
@@ -121,5 +121,7 @@
     "/storage_old/products/April2024/YBiFfciRuXn5jp6zoqV5.png": "/storage_old/products/April2024/YBiFfciRuXn5jp6zoqV5.png?id=df9dc3760fc2edab511b35d41b9cf088",
     "/storage_old/products/April2024/yOpz8pG9nG637isH9nPt.png": "/storage_old/products/April2024/yOpz8pG9nG637isH9nPt.png?id=5634e739e39aeb409afb1e335117b872",
     "/storage_old/products/April2024/zL1QDf6z1H4KbtpoiKa1.png": "/storage_old/products/April2024/zL1QDf6z1H4KbtpoiKa1.png?id=041f9e43265b208b61f15ff49cd1557b",
-    "/images/referances.jpg": "/images/referances.jpg?id=c84079f3fb5e7853a09c0df64a5a187f"
+    "/images/referances.jpg": "/images/referances.jpg?id=c84079f3fb5e7853a09c0df64a5a187f",
+    "/images/englishflag.jpg": "/images/englishflag.jpg?id=7814ead7882f3e07e7eafa665d75ad0d",
+    "/images/turkishflag.jpg": "/images/turkishflag.jpg?id=72c07ab3c6a483b88760379764c6bd1d"
 }

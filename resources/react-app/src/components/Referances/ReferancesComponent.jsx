@@ -2,39 +2,70 @@ import React from "react";
 import İmgExample from "../../assets/Referances/refexample.png";
 const ReferancesComponent = () => {
     return (
-        <div className="mt-4 mb-4  container mx-auto flex justify-center">
-            <div className="flex  justify-center ">
-                <div className="flex flex-row  flex-wrap justify-start w-10/12  max-md:w-10/12 max-lg:w-10/12 max-lg:justify-center max-xl:justify-center max-2xl:w-full">
+        <div className="container mx-auto my-10">
+            <div className="flex flex-wrap justify-start">
+                <div className="w-1/4 h-96 max-sm:h-44 max-lg:w-2/4 p-4 flex flex-col justify-center items-center ">
                     <img
-                        className="w-80 h-48 p-4"
-                        src={İmgExample}
+                        className="cursor-pointer  w-full h-full "
                         alt="Example"
-                    ></img>
+                        src={İmgExample}
+                        width={288}
+                        height={312}
+                    />
+                </div>
+                <div className="w-1/4 h-96 max-sm:h-44 max-lg:w-2/4 p-4 flex flex-col justify-center items-center ">
                     <img
-                        className="w-80 h-48 p-4"
-                        src={İmgExample}
+                        className="cursor-pointer  w-full h-full "
                         alt="Example"
-                    ></img>
+                        src={İmgExample}
+                        width={288}
+                        height={312}
+                    />
+                </div>
+                <div className="w-1/4 h-96 max-sm:h-44 max-lg:w-2/4 p-4 flex flex-col justify-center items-center ">
                     <img
-                        className="w-80 h-48 p-4"
-                        src={İmgExample}
+                        className="cursor-pointer  w-full h-full "
                         alt="Example"
-                    ></img>
+                        src={İmgExample}
+                        width={288}
+                        height={312}
+                    />
+                </div>
+                <div className="w-1/4 h-96 max-sm:h-44 max-lg:w-2/4 p-4 flex flex-col justify-center items-center ">
                     <img
-                        className="w-80 h-48 p-4"
-                        src={İmgExample}
+                        className="cursor-pointer  w-full h-full "
                         alt="Example"
-                    ></img>
+                        src={İmgExample}
+                        width={288}
+                        height={312}
+                    />
+                </div>
+                <div className="w-1/4 h-96 max-sm:h-44 max-lg:w-2/4 p-4 flex flex-col justify-center items-center ">
                     <img
-                        className="w-80 h-48 p-4"
-                        src={İmgExample}
+                        className="cursor-pointer  w-full h-full "
                         alt="Example"
-                    ></img>
+                        src={İmgExample}
+                        width={288}
+                        height={312}
+                    />
+                </div>
+                <div className="w-1/4 h-96 max-sm:h-44 max-lg:w-2/4 p-4 flex flex-col justify-center items-center ">
                     <img
-                        className="w-80 h-48 p-4"
-                        src={İmgExample}
+                        className="cursor-pointer  w-full h-full "
                         alt="Example"
-                    ></img>
+                        src={İmgExample}
+                        width={288}
+                        height={312}
+                    />
+                </div>
+                <div className="w-1/4 h-96 max-sm:h-44 max-lg:w-2/4 p-4 flex flex-col justify-center items-center ">
+                    <img
+                        className="cursor-pointer  w-full h-full "
+                        alt="Example"
+                        src={İmgExample}
+                        width={288}
+                        height={312}
+                    />
                 </div>
             </div>
         </div>
