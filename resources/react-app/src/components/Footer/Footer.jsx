@@ -30,7 +30,6 @@ const Footer = ({ data }) => {
                             <a
                                 className="text-lg border-l-2 border-white pl-2 hover:pl-4 delay-100 duration-300   "
                                 href="hakkimizda"
-                                target="blank"
                             >
                                 {t("FooterHome")}
                             </a>
@@ -39,7 +38,6 @@ const Footer = ({ data }) => {
                             <a
                                 className="text-lg border-l-2 border-white pl-2 hover:pl-4 delay-100 duration-300"
                                 href="hakkimizda"
-                                target="blank"
                             >
                                 {t("FooterAboutUs")}
                             </a>
@@ -48,7 +46,6 @@ const Footer = ({ data }) => {
                             <a
                                 className="text-lg border-l-2 border-white pl-2 hover:pl-4 delay-100 duration-300"
                                 href="urunler"
-                                target="blank"
                             >
                                 {t("FooterProduct")}
                             </a>
@@ -65,8 +62,23 @@ const Footer = ({ data }) => {
                         <li>
                             <a
                                 className="text-lg border-l-2 border-white pl-2 hover:pl-4 delay-100 duration-300"
+                                href={"/referanslar"}
+                            >
+                                {t("FooterReferance")}
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className="text-lg border-l-2 border-white pl-2 hover:pl-4 delay-100 duration-300"
+                                href={"/faaliyetler"}
+                            >
+                                {t("FooterActivities")}
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className="text-lg border-l-2 border-white pl-2 hover:pl-4 delay-100 duration-300"
                                 href="iletisim"
-                                target="blank"
                             >
                                 {t("FooterContact")}
                             </a>
