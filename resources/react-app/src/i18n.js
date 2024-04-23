@@ -26,6 +26,7 @@ const resources = {
             ProductsBread: "Ürünler",
             ContactBread: "İletişim",
             ReferanceBread: "Referanslar",
+            ActivitiesBread: "Faaliyetler",
             /*Hakkımızda*/
             AboutUsTitle: "Hakkımızda",
             AboutUsFirstP:
@@ -58,6 +59,7 @@ const resources = {
             HeaderCatalog: "Katalog",
             HeaderContact: "İletişim",
             HeaderReferance: "Referanslar",
+            HeaderActivities: "Faaliyetler",
             /*Footer*/
             FooterHome: "Anasayfa",
             FooterAboutUs: "Hakkımızda",
@@ -92,6 +94,7 @@ const resources = {
             ProductsBread: "Products",
             ContactBread: "Contact",
             ReferanceBread: "Referances",
+            ActivitiesBread: "Activities",
             /*Hakkımızda*/
             AboutUsTitle: "About Us",
             AboutUsFirstP:
@@ -124,6 +127,7 @@ const resources = {
             HeaderCatalog: "Catalog",
             HeaderContact: "Contact",
             HeaderReferance: "Referances",
+            HeaderActivities: "Activities",
             /*Footer*/
             FooterHome: "Home",
             FooterAboutUs: "About us",

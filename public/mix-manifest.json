@@ -1,5 +1,5 @@
 {
-    "/js/app.js": "/js/app.js?id=20ab429770a20b7657503a6cdc542ff6",
+    "/js/app.js": "/js/app.js?id=6993dd8d3ab3058720667038865e42cd",
     "/css/app.css": "/css/app.css?id=68b329da9893e34099c7d8ad5cb9c940",
     "/favicon.ico": "/favicon.ico?id=b813881ffe7b1199eee34977e7a31bf9",
     "/fonts/vendor/slick-carousel/slick/slick.eot": "/fonts/vendor/slick-carousel/slick/slick.eot?id=4bb08b6ed048eaf8be2a371ffc8faec2",
@@ -25,6 +25,7 @@
     "/images/demir.jpg": "/images/demir.jpg?id=3c908155353ea7240c762e2d49d56f00",
     "/images/destek.png": "/images/destek.png?id=5f20d3baa077976488e8cefa5947f2e7",
     "/images/email.png": "/images/email.png?id=bad3318112a3631a6b48c281ecbfc53a",
+    "/images/englishflag.jpg": "/images/englishflag.jpg?id=7814ead7882f3e07e7eafa665d75ad0d",
     "/images/facebook.png": "/images/facebook.png?id=26ba70b815b797156889c4a01fb00861",
     "/images/headerlogo.png": "/images/headerlogo.png?id=4c204381539accfa013a36f4151b5fb7",
     "/images/headerlogo3.png": "/images/headerlogo3.png?id=e30372dedc2d43e3b65032e62c988d53",
@@ -39,7 +40,9 @@
     "/images/phonefix.png": "/images/phonefix.png?id=35dd9a2f51f6cce73ae6444fe2b41c6b",
     "/images/prodcuts.png": "/images/prodcuts.png?id=96b11076d57770db9cf924ba52a28809",
     "/images/productbanner.jpg": "/images/productbanner.jpg?id=a0068503d05add54249b1ab0e07deba9",
+    "/images/referances.jpg": "/images/referances.jpg?id=c84079f3fb5e7853a09c0df64a5a187f",
     "/images/refexample.png": "/images/refexample.png?id=8201303f13a9b0dca0d2bb9a7f8cb208",
+    "/images/turkishflag.jpg": "/images/turkishflag.jpg?id=72c07ab3c6a483b88760379764c6bd1d",
     "/images/twitter.png": "/images/twitter.png?id=000b6a0a60290ba1708c0ceec69fb4c1",
     "/images/vendor/slick-carousel/slick/ajax-loader.gif": "/images/vendor/slick-carousel/slick/ajax-loader.gif?id=c5f04404df58fc3deb42d69f94476b6c",
     "/images/vizyon.png": "/images/vizyon.png?id=65f715240ffaf879ee9891328722a067",
@@ -56,7 +59,7 @@
     "/logo192.png": "/logo192.png?id=995306f3f1b50873ba0fe4c857a90d22",
     "/logo512.png": "/logo512.png?id=93c81d868a39562d52258e5b5b267644",
     "/manifest.json": "/manifest.json?id=d9d975cebe2ec20b6c652e1e4c12ccf0",
-    "/mix-manifest.json": "/mix-manifest.json?id=48578463a93f0f372109e7c1a4f0834c",
+    "/mix-manifest.json": "/mix-manifest.json?id=bbadcfc8cc0b1909ca9e4ab1f3067935",
     "/robots.txt": "/robots.txt?id=fa1ded1ed7c11438a9b0385b1e112850",
     "/storage.zip": "/storage.zip?id=44fa94fd8df429aae53e493c00be3482",
     "/storage_old/home-sliders/April2024/bzdB4c8G1dg9x0nfbovA.png": "/storage_old/home-sliders/April2024/bzdB4c8G1dg9x0nfbovA.png?id=b5878986b9c19ab088a85958b7c8d0f5",
@@ -121,7 +124,5 @@
     "/storage_old/products/April2024/YBiFfciRuXn5jp6zoqV5.png": "/storage_old/products/April2024/YBiFfciRuXn5jp6zoqV5.png?id=df9dc3760fc2edab511b35d41b9cf088",
     "/storage_old/products/April2024/yOpz8pG9nG637isH9nPt.png": "/storage_old/products/April2024/yOpz8pG9nG637isH9nPt.png?id=5634e739e39aeb409afb1e335117b872",
     "/storage_old/products/April2024/zL1QDf6z1H4KbtpoiKa1.png": "/storage_old/products/April2024/zL1QDf6z1H4KbtpoiKa1.png?id=041f9e43265b208b61f15ff49cd1557b",
-    "/images/referances.jpg": "/images/referances.jpg?id=c84079f3fb5e7853a09c0df64a5a187f",
-    "/images/englishflag.jpg": "/images/englishflag.jpg?id=7814ead7882f3e07e7eafa665d75ad0d",
-    "/images/turkishflag.jpg": "/images/turkishflag.jpg?id=72c07ab3c6a483b88760379764c6bd1d"
+    "/images/activities.jpg": "/images/activities.jpg?id=7a12c0b1327246028d0dacabce2dc0af"
 }

@@ -54,8 +54,9 @@ const Header = ({ data }) => {
         { name: "Hakkımızda", href: "/hakkimizda" },
         { name: "Ürünlerimiz", href: "/urunler" },
         { name: "Katalog", href: data?.catalog_url, target: "1" },
-        { name: "İletişim", href: "/iletisim" },
         { name: "Referanslar", href: "/referanslar" },
+        { name: "Faaliyetler", href: "/faaliyetler" },
+        { name: "İletişim", href: "/iletisim" },
     ];
 
     return (
@@ -215,24 +216,7 @@ const Header = ({ data }) => {
                                             >
                                                 {t("HeaderCatalog")}
                                             </a>
-                                            <a
-                                                className={
-                                                    navItem === "/iletisim"
-                                                        ? `text-base font-semibold underline-offset-8 ${
-                                                              navbar
-                                                                  ? "text-black underline"
-                                                                  : "underline"
-                                                          }`
-                                                        : `text-base font-medium ${
-                                                              navbar
-                                                                  ? "text-black"
-                                                                  : "text-with-underline"
-                                                          }`
-                                                }
-                                                href="/iletisim"
-                                            >
-                                                {t("HeaderContact")}
-                                            </a>
+
                                             <a
                                                 className={
                                                     navItem === "/referanslar"
@@ -250,6 +234,42 @@ const Header = ({ data }) => {
                                                 href="/referanslar"
                                             >
                                                 {t("HeaderReferance")}
+                                            </a>
+                                            <a
+                                                className={
+                                                    navItem === "/faaliyetler"
+                                                        ? `text-base font-semibold underline-offset-8 ${
+                                                              navbar
+                                                                  ? "text-black underline"
+                                                                  : "underline"
+                                                          }`
+                                                        : `text-base font-medium ${
+                                                              navbar
+                                                                  ? "text-black"
+                                                                  : "text-with-underline"
+                                                          }`
+                                                }
+                                                href="/faaliyetler"
+                                            >
+                                                {t("HeaderActivities")}
+                                            </a>
+                                            <a
+                                                className={
+                                                    navItem === "/iletisim"
+                                                        ? `text-base font-semibold underline-offset-8 ${
+                                                              navbar
+                                                                  ? "text-black underline"
+                                                                  : "underline"
+                                                          }`
+                                                        : `text-base font-medium ${
+                                                              navbar
+                                                                  ? "text-black"
+                                                                  : "text-with-underline"
+                                                          }`
+                                                }
+                                                href="/iletisim"
+                                            >
+                                                {t("HeaderContact")}
                                             </a>
 
                                             <div>
