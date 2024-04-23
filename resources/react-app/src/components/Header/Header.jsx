@@ -102,7 +102,7 @@ const Header = ({ data }) => {
                             <div className="flex items-center justify-center sm:items-stretch sm:justify-around text-[#191919] font-semibold w-full ">
                                 <div className="hidden sm:ml-6 md:block w-[85%] max-xl:w-full">
                                     <div
-                                        className={`flex justify-between items-center max-xl:text-sm max-lg:px-10 ${
+                                        className={`flex justify-between items-center max-xl:text-sm max-lg:px-0 ${
                                             navbar ? "" : "mt-8"
                                         } max-xl:px-10`}
                                     >
@@ -142,7 +142,7 @@ const Header = ({ data }) => {
                                             </div>
                                         )}
 
-                                        <div className="w-full flex justify-end items-center text-white gap-16 max-lg:gap-4">
+                                        <div className="w-full flex justify-end items-center text-white gap-12 max-xl:gap-8 max-lg:gap-4">
                                             <a
                                                 className={
                                                     navItem === "/"
