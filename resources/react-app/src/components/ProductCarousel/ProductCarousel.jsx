@@ -2,7 +2,6 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import demir from "../../assets/ProductSlider/demir.jpg";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import { useState, useEffect } from "react";
 import generalService from "../../services/generalService";
@@ -13,7 +12,7 @@ function SampleNextArrow(props) {
 
     return (
         <MdKeyboardArrowRight
-            className="slick-arrow slick-next -right-28 max-md:-right-2 max-sm:w-12 max-sm:right-2 max-lg:right-2 max-xl:w-20 max-xl:h-24 max-xl:right-4 h-56 w-40 z-40"
+            className="slick-arrow slick-next -right-0 max-md:-right-2 max-sm:w-12 max-sm:right-2 max-lg:right-2 max-xl:w-20 max-xl:h-24 max-xl:right-4 max-2xl:w-20 max-2xl:h-20 max-2xl:right-8 max-3xl:w-20 max-3xl:h-20 max-3xl:right-8 h-56 w-40 z-40"
             style={{
                 ...style,
                 display: "block",
@@ -28,7 +27,7 @@ function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
         <MdKeyboardArrowLeft
-            className="slick-arrow slick-next -left-28 max-md:-left-1 max-sm:w-12 max-sm:left-2 max-lg:-left-4  max-xl:w-20 max-xl:h-24 max-xl:left-4 h-56 w-40 z-40"
+            className="slick-arrow slick-next -left-0 max-md:-left-1 max-sm:w-12 max-sm:left-2 max-lg:-left-4  max-xl:w-20 max-xl:h-24 max-xl:left-4 max-2xl:w-20 max-2xl:h-20 max-2xl:left-8 h-56 w-40 z-40"
             style={{
                 ...style,
                 display: "block",

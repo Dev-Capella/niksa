@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import BreadcrumbsNav from "../../components/BreadcrumbsNav/BreadcrumbsNav";
-import AboutusBanner from "../../assets/AboutUs/aboutban1.jpg";
 import AboutBanner from "../../assets/AboutUs/aboutbannerss.jpg";
 import generalService from "../../services/generalService";
 import { useTranslation } from "react-i18next";

@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import support from "../../assets/FixedContact/destek.png";
-import phone from "../../assets/FixedContact/phonefix.png";
-import wp from "../../assets/FixedContact/wp.png";
 import { useTranslation } from "react-i18next";
 import { BiLogoWhatsapp } from "react-icons/bi";
 import { MdPhone } from "react-icons/md";

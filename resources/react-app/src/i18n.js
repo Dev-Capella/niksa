@@ -95,7 +95,7 @@ const resources = {
             AboutUsBread: "About Us",
             ProductsBread: "Products",
             ContactBread: "Contact",
-            ReferanceBread: "Referances",
+            ReferanceBread: "References",
             ActivitiesBread: "Activities",
             /*Hakkımızda*/
             AboutUsTitle: "About Us",
@@ -128,7 +128,7 @@ const resources = {
             HeaderProduct: "Products",
             HeaderCatalog: "Catalog",
             HeaderContact: "Contact",
-            HeaderReferance: "Referances",
+            HeaderReferance: "References",
             HeaderActivities: "Activities",
             /*Footer*/
             FooterHome: "Home",
@@ -137,7 +137,7 @@ const resources = {
             FooterCatalog: "Catalog",
             FooterContact: "Contact",
             FooterContactİnfo: "Contact İnformations",
-            FooterReferance: "Referances",
+            FooterReferance: "References",
             FooterActivities: "Activities",
         },
     },

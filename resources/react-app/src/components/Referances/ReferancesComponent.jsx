@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import İmgExample from "../../assets/Referances/refexample.png";
 import generalService from "../../services/generalService";
 const ReferancesComponent = () => {
     const [data, setData] = useState();
