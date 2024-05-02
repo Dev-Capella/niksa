@@ -4,30 +4,49 @@ import AboutusBanner from "../../assets/AboutUs/aboutban1.jpg";
 import AboutBanner from "../../assets/AboutUs/aboutbannerss.jpg";
 import generalService from "../../services/generalService";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 const About = () => {
     const { t, i18n } = useTranslation();
     const clickHandle = async (lang) => {
         await i18n.changeLanguage(lang);
     };
-
     const [data, setData] = useState(null);
     const [certificate, setCertificate] = useState(null);
 
     const getAboutus = async () => {
-        const result = await generalService.getAboutUs();
+        const result = await generalService.getAboutUs(i18n.language);
         setData(result);
     };
     const getCertificate = async () => {
-        const result = await generalService.getCertificate();
+        const result = await generalService.getCertificate(i18n.language);
         setCertificate(result);
     };
+    const [page, setPage] = useState(null);
+    const getPage = async () => {
+        const result = await generalService.getPage(
+            i18n.language,
+            "hakkimizda"
+        );
+        setPage(result);
+    };
+
     useEffect(() => {
         getAboutus();
+        getPage();
         getCertificate();
-    }, []);
+    }, [i18n.language]);
     return (
         <>
-            <BreadcrumbsNav imageSrc={AboutusBanner} text={data?.title} />
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>{page?.meta_title}</title>
+                <link rel="canonical" href={`/hakkimizda`} />
+                <meta name="description" content="Niksa Metal" />
+                {page?.meta_tag.map((item, i) => (
+                    <meta key={i} name="description" content={item} />
+                ))}
+            </Helmet>
+            <BreadcrumbsNav imageSrc={page?.image} text={page?.title} />
             <div className="flex justify-center items-center">
                 {" "}
                 <div className="container mx-atuo px-10 relative flex justify-between items-start mt-10">
@@ -59,7 +78,14 @@ const About = () => {
                                     key={i}
                                 >
                                     <a href={item.image} target="blank">
-                                        <img src={item.image} alt={item.name} />
+                                        <img
+                                            src={
+                                                i18n.language === "tr"
+                                                    ? item.image
+                                                    : item.image_en
+                                            }
+                                            alt={item.name}
+                                        />
                                     </a>
                                     <p className="pt-2">{item.name}</p>
                                 </div>

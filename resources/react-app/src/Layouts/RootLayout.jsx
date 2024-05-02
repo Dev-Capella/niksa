@@ -6,8 +6,11 @@ import { Outlet } from "react-router-dom";
 import LoadingPage from "../components/Loading/Loading.jsx";
 import generalService from "../services/generalService.js";
 import FixedContact from "../components/FixedContact/FixedContact.jsx";
+import { useTranslation } from "react-i18next";
+
 const RootLayout = () => {
     const [loading, setLoading] = useState(true);
+    const { t, i18n } = useTranslation();
 
     useEffect(() => {
         // İletişim sayfası yüklenirken 2 saniye boyunca loading durumunu göster
@@ -19,12 +22,12 @@ const RootLayout = () => {
     }, []);
     const [data, setData] = useState(null);
     const getCatalog = async () => {
-        const result = await generalService.getCatalog();
+        const result = await generalService.getCatalog(i18n.language);
         setData(result);
     };
     useEffect(() => {
         getCatalog();
-    }, []);
+    }, [i18n.language]);
     return (
         <>
             {loading ? (

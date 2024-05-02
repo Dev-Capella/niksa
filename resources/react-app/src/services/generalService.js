@@ -5,14 +5,24 @@ const getProducts = async (value) => {
     return result.data;
 };
 
-const getPage = async (slug) => {
-    const result = await axiosInstance.get(`get-page/${slug}`);
+const getPage = async (lang, slug) => {
+    const result = await axiosInstance.get(`get-page/${slug}`, {
+        headers: {
+            "Content-Type": "application/json",
+            "Accept-Language": lang,
+        },
+    });
     return result.data;
 };
 
 //Home Slider
-const getHomeSlider = async (slug) => {
-    const result = await axiosInstance.get(`get-slider`);
+const getHomeSlider = async (lang) => {
+    const result = await axiosInstance.get(`get-slider`, {
+        headers: {
+            "Content-Type": "application/json",
+            "Accept-Language": lang,
+        },
+    });
     return result.data;
 };
 
@@ -27,30 +37,71 @@ const contactPost = async (data) => {
 };
 
 //About us
-const getAboutUs = async () => {
-    const result = await axiosInstance.get(`get-aboutus`);
+const getAboutUs = async (lang) => {
+    const result = await axiosInstance.get(`get-aboutus`, {
+        headers: {
+            "Content-Type": "application/json",
+            "Accept-Language": lang,
+        },
+    });
     return result.data;
 };
 //Home Slogan
-const getHomeSlogan = async () => {
-    const result = await axiosInstance.get(`get-slogan`);
+const getHomeSlogan = async (lang) => {
+    const result = await axiosInstance.get(`get-slogan`, {
+        headers: {
+            "Content-Type": "application/json",
+            "Accept-Language": lang,
+        },
+    });
     return result.data;
 };
 //Catalog
 
-const getCatalog = async () => {
-    const result = await axiosInstance.get(`get-catalog`);
+const getCatalog = async (lang) => {
+    const result = await axiosInstance.get(`get-catalog`, {
+        headers: {
+            "Content-Type": "application/json",
+            "Accept-Language": lang,
+        },
+    });
     return result.data;
 };
 //Certificate
-const getCertificate = async () => {
-    const result = await axiosInstance.get(`get-certificate`);
+const getCertificate = async (lang) => {
+    const result = await axiosInstance.get(`get-certificate`, {
+        headers: {
+            "Content-Type": "application/json",
+            "Accept-Language": lang,
+        },
+    });
+    return result.data;
+};
+//Faliyetlerimiz
+const getActivities = async (lang) => {
+    const result = await axiosInstance.get(`get-activities`, {
+        headers: {
+            "Content-Type": "application/json",
+            "Accept-Language": lang,
+        },
+    });
+    return result.data;
+};
+const getReferance = async (lang) => {
+    const result = await axiosInstance.get(`get-referance`, {
+        headers: {
+            "Content-Type": "application/json",
+            "Accept-Language": lang,
+        },
+    });
     return result.data;
 };
 const exportFunction = {
     getProducts,
+    getActivities,
     getCatalog,
     getCertificate,
+    getReferance,
     getHomeProductSlider,
     getHomeSlogan,
     getPage,

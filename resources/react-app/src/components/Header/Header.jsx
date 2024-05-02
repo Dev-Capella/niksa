@@ -25,16 +25,11 @@ const Header = ({ data }) => {
         }
     };
     /*Bayrak değiştirme*/
-    const [currentFlag, setCurrentFlag] = useState("uk");
-    const toggleFlag = () => {
-        setCurrentFlag(currentFlag === "turkey" ? "uk" : "turkey");
-        if (currentFlag === "turkey") {
-            i18n.changeLanguage("tr");
-            localStorage.setItem("lang", "tr");
-        } else {
-            i18n.changeLanguage("en");
-            localStorage.setItem("lang", "en");
-        }
+
+    const changeLanguagee = (lang) => {
+        i18n.changeLanguage(lang);
+        localStorage.setItem("lang", lang);
+        console.log(i18n.language);
     };
     const slug = window.location.pathname;
     useEffect(() => {
@@ -53,7 +48,14 @@ const Header = ({ data }) => {
         { name: "Anasayfa", href: "/" },
         { name: "Hakkımızda", href: "/hakkimizda" },
         { name: "Ürünlerimiz", href: "/urunler" },
-        { name: "Katalog", href: data?.catalog_url, target: "1" },
+        {
+            name: "Katalog",
+            href:
+                i18n.language === "tr"
+                    ? data?.catalog_url
+                    : data?.catalog_url_en,
+            target: "1",
+        },
         { name: "Referanslar", href: "/referanslar" },
         { name: "Faaliyetler", href: "/faaliyetler" },
         { name: "İletişim", href: "/iletisim" },
@@ -211,7 +213,11 @@ const Header = ({ data }) => {
                                                                   : "text-with-underline"
                                                           }`
                                                 }
-                                                href={data?.catalog_url}
+                                                href={
+                                                    i18n.language === "tr"
+                                                        ? data?.catalog_url
+                                                        : data?.catalog_url_en
+                                                }
                                                 target="blank"
                                             >
                                                 {t("HeaderCatalog")}
@@ -273,16 +279,29 @@ const Header = ({ data }) => {
                                             </a>
 
                                             <div>
-                                                <img
-                                                    className="w-6 cursor-pointer"
-                                                    src={
-                                                        currentFlag === "turkey"
-                                                            ? turkishflag
-                                                            : englishflag
-                                                    }
-                                                    alt="Flag"
-                                                    onClick={toggleFlag}
-                                                />
+                                                {i18n.language === "en" ? (
+                                                    <img
+                                                        className="w-6 cursor-pointer"
+                                                        src={turkishflag}
+                                                        alt="Niksa Metal"
+                                                        onClick={() =>
+                                                            changeLanguagee(
+                                                                "tr"
+                                                            )
+                                                        }
+                                                    />
+                                                ) : (
+                                                    <img
+                                                        className="w-6 cursor-pointer"
+                                                        src={englishflag}
+                                                        alt="Niksa Metal"
+                                                        onClick={() =>
+                                                            changeLanguagee(
+                                                                "en"
+                                                            )
+                                                        }
+                                                    />
+                                                )}
                                             </div>
                                         </div>
                                     </div>

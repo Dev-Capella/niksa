@@ -7,10 +7,32 @@ use App\InfoPage;
 
 class PageController extends Controller
 {
-    public function getPage($slug)
+    public function getPage(Request $request, $slug)
     {
-        $data = InfoPage::where('slug', $slug)->get();
+        $acceptLanguage = $request->header('Accept-Language');
+        $languageCode = explode(',', $acceptLanguage)[0];
+        $languageCode = explode('-', $languageCode)[0];
+        $data = InfoPage::withTranslations($languageCode)->where('slug', $slug)->first();
+        $data = $data->translate($languageCode);
 
+        if ($data->image) {
+            $data->image = url('storage/' . str_replace('\\', '/', $data->image));
+        } else {
+            $data->image = null;
+        }
+
+        $metaTags = explode(',', $data->meta_tag);
+
+        // Ayrıştırılan meta tag değerlerini temizleme ve düzenleme
+        foreach ($metaTags as $tag) {
+            $tag = trim($tag); // Boşlukları temizle
+            if (!empty($tag)) { // Boş olmayanları ekle
+                $cleanedMetaTags[] = $tag;
+            }
+        }
+        $data->meta_tag = $cleanedMetaTags; // Değişken adını düzeltme: cleanedMetaTags -> $cleanedMetaTags
+
+        // Temizlenmiş meta tag değerlerini içeren $data nesnesini JSON olarak döndürme
         return response()->json($data);
     }
 }

@@ -53,7 +53,11 @@ const Footer = ({ data }) => {
                         <li>
                             <a
                                 className="text-lg border-l-2 border-white pl-2 hover:pl-4 delay-100 duration-300"
-                                href={data?.catalog_url}
+                                href={
+                                    i18n.language === "tr"
+                                        ? data?.catalog_url
+                                        : data?.catalog_url_en
+                                }
                                 target="blank"
                             >
                                 {t("FooterCatalog")}
@@ -85,12 +89,12 @@ const Footer = ({ data }) => {
                         </li>
                     </ul>
                 </div>
-                <div className="flex w-2/6 max-lg:w-full max-lg:mt-5 h-60 justify-end items-starts">
+                <div className="flex w-2/6 max-lg:w-full max-lg:mt-5 max-lg:justify-start h-60 justify-end items-starts">
                     <ul className="text-white flex flex-col gap-2">
                         <li>
-                            <h4 className="font-bold text-2xl text-white mb-3">
+                            <h2 className="font-bold text-2xl text-white mb-3">
                                 {t("FooterContactİnfo")}
-                            </h4>
+                            </h2>
                         </li>
                         <li className="flex justify-start items-center gap-3">
                             <FaPhone />

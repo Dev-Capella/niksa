@@ -5,8 +5,8 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use TCG\Voyager\Traits\Translatable;
 
-class InfoPage extends Model
+class Activity extends Model
 {
     use Translatable;
-    protected $translatable = ['title', 'meta_title', 'meta_tag'];
+    protected $translatable = ['title', 'content', 'image_alt'];
 }

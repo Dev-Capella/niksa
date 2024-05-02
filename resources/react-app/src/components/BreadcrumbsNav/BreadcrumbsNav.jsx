@@ -9,9 +9,9 @@ const BreadcrumbsNav = ({ imageSrc, text }) => {
                 alt={text}
             ></img>
             <div className="absolute inset-0 bg-black opacity-30 "></div>
-            <h2 className="text-white font-bold text-7xl max-xl:text-3xl max-md:text-2xl absolute inset-0 flex items-center justify-center">
+            <h1 className="text-white font-bold text-7xl max-xl:text-3xl max-md:text-2xl absolute inset-0 flex items-center justify-center">
                 {text}
-            </h2>
+            </h1>
         </div>
     );
 };

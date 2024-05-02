@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from "react";
-import Banner from "../../assets/SloganBanner/mainmenuimage.jpg";
 import generalService from "../../services/generalService";
+import { useTranslation } from "react-i18next";
 
 const SloganBanner = () => {
     const [data, setData] = useState(null);
+    const { t, i18n } = useTranslation();
+
     const getSlogan = async () => {
-        const result = await generalService.getHomeSlogan();
+        const result = await generalService.getHomeSlogan(i18n.language);
         setData(result);
         console.log(result);
     };
     useEffect(() => {
         getSlogan();
-    }, []);
+    }, [i18n.language]);
     return (
         <div className="relative mb-16 w-full max-lg:w-full max-sm:w-full">
             <img

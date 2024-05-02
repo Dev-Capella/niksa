@@ -5,6 +5,7 @@ import generalService from "../../services/generalService";
 import { useParams } from "react-router-dom";
 import LoadingPage from "../../components/Loading/Loading.jsx";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 function Products() {
     const { t, i18n } = useTranslation();
     const clickHandle = async (lang) => {
@@ -29,10 +30,17 @@ function Products() {
         setProducts(result.data);
         setLoading(false);
     };
+    const [page, setPage] = useState(null);
+    const getPage = async () => {
+        const result = await generalService.getPage(i18n.language, "ürünler");
+        setPage(result);
+    };
+
     useLayoutEffect(() => {
         getProducts(pagination);
         scrollToTop();
-    }, [pagination]);
+        getPage();
+    }, [pagination, i18n.language]);
 
     const nextItem = () => {
         if (pagination !== paginationValue.length) {
@@ -58,10 +66,16 @@ function Products() {
     }
     return (
         <div>
-            <BreadcrumbsNav
-                imageSrc={prodcutBanner}
-                text={t("ProductsBread")}
-            />
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>{page?.meta_title}</title>
+                <link rel="canonical" href={`/urunler`} />
+                <meta name="description" content="Niksa Metal" />
+                {page?.meta_tag.map((item, i) => (
+                    <meta key={i} name="description" content={item} />
+                ))}
+            </Helmet>
+            <BreadcrumbsNav imageSrc={page?.image} text={page?.title} />
             {loading ? (
                 <LoadingPage />
             ) : (

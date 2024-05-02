@@ -71,3 +71,14 @@ Route::get('/get-certificate', [
     HomeController::class,
     'getCertificate',
 ]);
+
+//Faliyetlerimizi
+Route::get('/get-activities', [
+    HomeController::class,
+    'getActivites',
+]);
+//Referanslar
+Route::get('/get-referance', [
+    HomeController::class,
+    'getReference',
+]);

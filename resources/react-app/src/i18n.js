@@ -137,8 +137,8 @@ const resources = {
             FooterCatalog: "Catalog",
             FooterContact: "Contact",
             FooterContactİnfo: "Contact İnformations",
-            FooterReferance: "Referanslar",
-            FooterActivities: "Faaliyetler",
+            FooterReferance: "Referances",
+            FooterActivities: "Activities",
         },
     },
 };

@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import generalService from "../../services/generalService";
+import { useTranslation } from "react-i18next";
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -39,14 +40,16 @@ function SamplePrevArrow(props) {
 
 const HeroCarousel = () => {
     const [products, setProducts] = useState(null);
+    const { t, i18n } = useTranslation();
+
+    const fetchData = async () => {
+        const data = await generalService.getHomeSlider(i18n.language);
+        console.log(data);
+        setProducts(data);
+    };
     useEffect(() => {
-        const fetchData = async () => {
-            const data = await generalService.getHomeSlider();
-            console.log(data);
-            setProducts(data);
-        };
         fetchData();
-    }, []);
+    }, [i18n.language]);
 
     const settings = {
         dots: true,

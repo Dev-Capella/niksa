@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io5";
@@ -7,12 +7,14 @@ import { IoMailUnreadOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import generalService from "../../services/generalService";
 
 const contactComponent = () => {
     const { t, i18n } = useTranslation();
     const clickHandle = async (lang) => {
         await i18n.changeLanguage(lang);
     };
+
     return (
         <div className=" border-radius-6px box-shadow-double-large flex flex-col justify-center w-full items-center -mt-16  relative z-10">
             <ContactForm />
