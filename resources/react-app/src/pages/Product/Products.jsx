@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import LoadingPage from "../../components/Loading/Loading.jsx";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
+import { Image } from "antd";
 function Products() {
     const { t, i18n } = useTranslation();
     const clickHandle = async (lang) => {
@@ -85,14 +86,16 @@ function Products() {
                             products.map((item, i) => (
                                 <div
                                     key={i}
-                                    className="w-1/4 h-96 max-sm:h-44 max-lg:w-2/4 p-4 flex flex-col justify-center items-center "
+                                    className="w-1/4 h-96 max-sm:h-auto max-lg:w-2/4 p-4 flex flex-col justify-center items-center"
                                 >
-                                    <img
-                                        className="cursor-pointer bg-[#f3f3f3] w-full h-full "
-                                        alt={item.image_alt}
+                                    <Image
+                                        style={{
+                                            width: "100%",
+                                            height: "100%",
+                                            backgroundColor: "#f3f3f3",
+                                        }}
                                         src={item.image}
-                                        width={288}
-                                        height={312}
+                                        alt={item.image_alt}
                                     />
                                     <p className="py-2 cursor-pointer">
                                         {item.name}
