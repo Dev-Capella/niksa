@@ -44,7 +44,7 @@ const HeroCarousel = () => {
 
     const fetchData = async () => {
         const data = await generalService.getHomeSlider(i18n.language);
-        console.log(data);
+
         setProducts(data);
     };
     useEffect(() => {

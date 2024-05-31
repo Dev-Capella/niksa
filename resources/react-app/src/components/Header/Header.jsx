@@ -29,7 +29,6 @@ const Header = ({ data }) => {
     const changeLanguagee = (lang) => {
         i18n.changeLanguage(lang);
         localStorage.setItem("lang", lang);
-        console.log(i18n.language);
     };
     const slug = window.location.pathname;
     useEffect(() => {
@@ -64,20 +63,20 @@ const Header = ({ data }) => {
     return (
         <Disclosure
             as="nav"
-            className={`absolute top-0 z-50 w-full max-sm:relative max-md:bg-white ${
+            className={`absolute top-0 z-50 w-full max-sm:relative max-md:bg-white transition-all ${
                 !isMobile && navbar
-                    ? "sticky top-0 bg-white shadow-md z-[99999] transition-all duration-500"
+                    ? "sticky top-100 bg-white shadow-md z-[99999] transition-all"
                     : ""
             }`}
             style={{ top: !isMobile && navbar ? "0" : "" }}
         >
             {({ open }) => (
                 <>
-                    <div className="mx-auto px-2   max-xl:mx-0 max-xl:px-0 ">
+                    <div className="mx-auto px-2 max-xl:mx-0 max-xl:px-0">
                         <div
                             className={
                                 navbar
-                                    ? "relative flex sm:h-auto h-auto items-center justify-between transition-all duration-500 "
+                                    ? "relative flex sm:h-auto h-auto items-center justify-between transition-all"
                                     : "relative flex sm:h-20 h-16 items-center justify-between"
                             }
                         >

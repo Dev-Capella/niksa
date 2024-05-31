@@ -9,7 +9,6 @@ const SloganBanner = () => {
     const getSlogan = async () => {
         const result = await generalService.getHomeSlogan(i18n.language);
         setData(result);
-        console.log(result);
     };
     useEffect(() => {
         getSlogan();

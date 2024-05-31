@@ -20,7 +20,7 @@ function Products() {
 
     const getProducts = async (pagValue) => {
         const result = await generalService.getProducts(pagValue);
-        console.log(result);
+
         const value = Math.ceil(result.total / 10);
         const paginationArray = [];
         for (let i = 0; i < value; i++) {
